@@ -45,7 +45,7 @@ body {
 
 	
 .weblog-title a {
-	font-size: 1.5rem;
+	font-size: 3rem;
 	color: var(--foreground) !important;
 	margin: 0;
 }
