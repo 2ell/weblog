@@ -31,6 +31,7 @@ Location: /style.css
 
 * {
 	margin: auto;
+	size: 1em;
 }
 
 body {
@@ -114,6 +115,10 @@ main {
 	max-width: 60%;
 	margin-top: 2em;
 	padding: 2em 2em;
+}
+
+.post {
+	padding-bottom: 2em;
 }
 
 .image-container {
