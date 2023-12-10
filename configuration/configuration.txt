@@ -17,8 +17,7 @@ Landing page template: Landing Page Template
 Separator:  · 
 Navigation: about, another-page, <a href="https://example.com">Example</a>, [Example](https://example.com)
 Files path: /files/
-Landing page post count: 2
-Landing page post length: 45 words
+Landing page post count: 3
 Post template: Post Template
 
 
@@ -26,7 +25,6 @@ Post template: Post Template
 ;; ----------
 
 Pagination path: /page/
-Page template: Page Template
 Previous page template: <span class="previous-page"><a href="$previous_page">← Previous Page</a></span>
 Next page template: <span class="next-page"><a href="$next_page">Next Page →</a></span>
 
