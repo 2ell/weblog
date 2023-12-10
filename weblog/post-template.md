@@ -4,7 +4,7 @@ Title: Post Template
 <article class="post">
 {body}
 <aside class="post-info">
-	<i class="fa-solid fa-clock"></i> <a href="{location}">{date}</a>
+	<i class="fa-solid fa-clock"></i> <a href="{location}" class="gradient">{date}</a>
 </aside>
 <aside class="post-tags">
 	{tags}

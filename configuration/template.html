@@ -53,27 +53,48 @@ body {
 
 /* -------------------------------------------------------------------------------------------- [ TITLES ] */
 
-.weblog-title a {
-	font-size: 3rem;
-	margin: 0;
+.weblog-title {
+	text-align: center;
+	margin: auto;
+	text-shadow: .1em .1em 0.2 hsla(202, 54%, 93%, 1);
 }
 
-.weblog-title a:hover {
-	text-transform: underline !important;
+.weblog-title a {
+	font-size: 3rem;
+	padding-top: 0.5rem;
+	line-height: 3.5rem;
+}
+
+@media (max-width: 600px) {
+  .weblog-title a {
+    font-size: 2rem;
+  }
+
+	header {	
+	max-width: 95vw;
+}
+
+  header nav li a {
+	font-size: 0.8rem;
+  }
+
+
 }
 
 .description {
+	text-align: center;
 	color: var(--foreground);
 	opacity: 0.9;
-	margin-top: -1rem;
+	margin-top: -0.1rem;
 }
 
 .gradient:hover {
     background-image: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan)) !important;
-	background-size: 100%;
+	background-size: cover;
     color: transparent !important;
     -webkit-background-clip: text;
-    background-clip: text;
+    background-clip:;
+	z-index: 10;
 }
 
 
@@ -82,7 +103,7 @@ body {
 header {	
 	background: #44475a;
 	border-radius: 0.7em;
-	max-width: 30em;
+	max-width: 50vw;
 }
 
 
@@ -150,6 +171,7 @@ main {
 	background-image: -webkit-linear-gradient(60deg, #bd93f9, #8be9fd) !important;
 	padding: 0;
 	border-radius: 0;
+	max-width: 50%;
     margin: 0;
  }
 
