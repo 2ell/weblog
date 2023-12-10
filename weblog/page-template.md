@@ -30,6 +30,8 @@ Title: Page Template
 
 {body}
 
+
+<span class="divider"></span>
 <hr>
 
 </main>
