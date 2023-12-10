@@ -41,24 +41,66 @@ body {
 }
 
 
-/* -------------------------------------------------------------------------------------- [ TITLE ] */
+/* -------------------------------------------------------------------------------------------- [ TITLES ] */
 
-	
+.weblog-title {
+	text-align: center;
+	margin: auto;
+	text-shadow: .1em .1em 0.2 hsla(202, 54%, 93%, 1);
+}
+
 .weblog-title a {
 	font-size: 3rem;
-	color: var(--foreground) !important;
-	margin: 0;
+	padding-top: 0.5rem;
+	line-height: 3.5rem;
 }
 
-#author {
-	color: var(--background);
+@media (max-width: 600px) {
+  .weblog-title a {
+    font-size: 2rem;
+  }
+
+	header {	
+	max-width: 95vw;
+}
+
+  header nav li a {
 	display: none;
-	font-size:1.5em;
-	margin-top: -1rem;
-	margin-left: 1rem;
+	font-size: 0.8rem;
+  }
+
 }
 
-/* -------------------------------------------------------------------------------------- [ NAV ] */
+.description {
+	text-align: center;
+	color: var(--foreground);
+	opacity: 0.9;
+	margin-top: -0.1rem;
+}
+
+.gradient:hover {
+    background-image: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan)) !important;
+	background-size: cover;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip:;
+	z-index: 10;
+}
+
+
+/* ----------------------------------------------------------------------------------------- [ HEADER/NAV ] */
+
+header {	
+	background: #44475a;
+	border-radius: 0.7em;
+	max-width: 50vw;
+}
+
+
+header {
+	margin-top: 2em;
+	padding: 2em 2em;
+}
 
 header nav ul {
 	list-style-type: none;
@@ -76,7 +118,7 @@ header nav li a {
 	margin-right: 1em;
 }
 
-/* -------------------------------------------------------------------------------------- [ TYPE ] */
+/* ----------------------------------------------------------------------------------------------- [ TYPE ] */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'VC Honey Deck', serif;
@@ -85,9 +127,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p, li {
+	max-width: 60cw;
 	line-height: 1.5em;
 }
-
 
 a:link { color: #9580ff; }
 a:visited { color: #9580ff; }
@@ -98,26 +140,10 @@ a:active { color: #6272A4; }
 /* -------------------------------------------------------------------------------------- [ SECTIONS ] */
 
 
-header {	
-	background: #44475a;
-	border-radius: 0.7em;
-	max-width: 30em;
-}
-
-
-header {
-	margin-top: 2em;
-	padding: 2em 2em;
-}
-
 main {
     max-width: 30em;
 	margin-top: 1em;
 	padding: 2em 2em;
-}
-
-main p {
-    max-width: 60cw;
 }
 
 .post {
@@ -125,9 +151,9 @@ main p {
 }
 
 .header-img {
-  border-radius: 0.7em;
+  border-radius: 100em;
   opacity: 0.7;
-  filter: saturate(4);
+  filter: saturate(4) !important;
   background-blend-mode: multiply;
 }
 
@@ -135,7 +161,8 @@ main p {
 	background-image: -webkit-linear-gradient(60deg, #bd93f9, #8be9fd) !important;
 	padding: 0;
 	border-radius: 0;
-	margin: 0;
+	max-width: 50%;
+    margin: 0;
  }
 
 .image-container img {
@@ -159,7 +186,7 @@ main p {
 	margin: 0 .3em -.1em 0;
 }
 
-/* -------------------------------------------------------------- [POST] */
+/* ------------------------------------------------------------------------------------------- [POST] */
 
 .post-info {
     text-decoration: none !important;
@@ -238,10 +265,6 @@ td, th {
 	border: 1px solid var(--accent);
 }
 
-.page-spacing {
-	margin-bottom: 2em;
-}
-
 /* -------------------------------------------------------------------------------------- [ FOOTER ] */
 
 #footer {
@@ -260,7 +283,6 @@ footer p {
 	text-align: center;
 	padding: 2em 2em;
 }
-
 
 #footer a {
     text-decoration: none !important;
