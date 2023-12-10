@@ -59,7 +59,7 @@ Date: $date
 This is a new blog post. You can author it in _Markdown_, which is **awesome**.
 ]>>
 
-Titleless title length: 15 words
+Titleless title length: 8 words
 Truncation appendix:  […]
 Title format: <h1><a href="$permalink">$title</a></h1>
 
