@@ -3,7 +3,7 @@
 ;; About your weblog
 ;; -----------------
 
-Weblog title: weblog
+Weblog title: a weblog
 Weblog description: 
 Author: laurel
 // Canonical domain: elsewhere.tld
