@@ -121,9 +121,13 @@ header {
 }
 
 main {
-	max-width: 60%;
+    max-width: 10em;
 	margin-top: 2em;
 	padding: 2em 2em;
+}
+
+main p {
+    max-width: 60cw;
 }
 
 .post {
@@ -161,7 +165,8 @@ main {
 
 .post-info {
     text-decoration: none !important;
-	margin-top: 1em;
+	margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 .post-info, .post-tags {
@@ -187,7 +192,6 @@ main {
 
 .post-info i {
 	padding-right: 0.5rem;
-    margin-bottom: 1.5em;
 }
 
 .stream {
@@ -250,7 +254,7 @@ footer p {
 	margin-top: 2em;
 	font-size: 0.9em;
 	font-family: 'VC Honey Deck', serif;
-	color: #F8F8F2;
+	color: var(--foreground);
 	text-align: center;
 	padding: 2em 2em;
 }
