@@ -101,7 +101,7 @@ a:active { color: #6272A4; }
 header {	
 	background: #44475a;
 	border-radius: 0.7em;
-	max-width: 50%;
+	max-width: 30em;
 }
 
 
