@@ -22,6 +22,9 @@ Title: Landing Page Template
 <body>
 
 <header>
+    <div class="img-container">
+        <img src="https://cdn.some.pics/laurel/64e91056c93bb.jpg">
+    </div>
 	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
 	{navigation}
 </header>
