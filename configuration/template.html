@@ -26,6 +26,7 @@
   	--orange: #ffb86c;
   	--pink: #ff79c6;
   	--purple: #bd93f9;
+	  --purple-faint: #ac9cc2;
   	--red: #ff5555;
   	--yellow: #f1fa8c;
 }
@@ -123,15 +124,15 @@ header nav ul {
 	padding: 0;
 }
 
-header nav li {
-	display: inline-block;
-}
-
 header nav li a {
-	display: block;
+	display: inline-block;
 	text-align: center;
 	text-decoration: none;
 	margin-right: 1rem;
+}
+
+header nav li a:hover {
+	color: var(--foreground);
 }
 
 /* ----------------------------------------------------------------------------------------------- [ TYPE ] */
