@@ -67,6 +67,7 @@ body {
   header nav li a {
 	display: none;
 	font-size: 0.8rem;
+	margin-right: 0.5rem;
   }
 
 }
@@ -102,6 +103,10 @@ header {
 	padding: 2em 2em;
 }
 
+header nav {
+	text-align: center;
+}
+
 header nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -114,8 +119,9 @@ header nav li {
 
 header nav li a {
 	display: block;
+	text-align: center;
 	text-decoration: none;
-	margin-right: 1em;
+	margin-right: 1rem;
 }
 
 /* ----------------------------------------------------------------------------------------------- [ TYPE ] */
@@ -131,11 +137,15 @@ p, li {
 	line-height: 1.5em;
 }
 
-a:link { color: #9580ff; }
-a:visited { color: #9580ff; }
-a:hover { color: #BD93F9; }
-a:active { color: #6272A4; }
+a:link { color: var(--purple); }
+a:visited { color: var(--purple); }
+a:hover { color: var(--pink); }
+a:active { color: var(--pink); }
 
+main a, footer  a {
+	text-decoration: none;
+	border-bottom: 1px dotted var(--purple);
+}
 
 /* -------------------------------------------------------------------------------------- [ SECTIONS ] */
 
@@ -151,7 +161,7 @@ main {
 }
 
 .header-img {
-  border-radius: 100em;
+  border-radius: 0.7em;
   opacity: 0.7;
   filter: saturate(4) !important;
   background-blend-mode: multiply;
@@ -287,8 +297,4 @@ footer p {
 	text-transform: lowercase;
 	color: var(--foreground) !important;
 	font-family: 'VC Honey Deck', serif;
-}
-
-#footer a:hover {
-	text-decoration: underline;
 }
