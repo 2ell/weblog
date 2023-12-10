@@ -26,10 +26,9 @@ Post template: Post Template
 ;; ----------
 
 Pagination path: /page/
-Previous page template: Page Template
-<span class="previous-page"><a href="$previous_page">← Previous Page</a></span>
-Next page template: Page Template
-<span class="next-page"><a href="$next_page">Next Page →</a></span>
+Page template: Page Template
+Previous page template: <span class="previous-page"><a href="$previous_page">← Previous Page</a></span>
+Next page template: <span class="next-page"><a href="$next_page">Next Page →</a></span>
 
 
 ;; Time stuff
