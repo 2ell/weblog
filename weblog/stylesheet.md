@@ -51,7 +51,7 @@ body {
 }
 
 #author {
-	color: var(--background-color);
+	color: var(--background);
 	display: none;
 	font-size:1.5em;
 	margin-top: -1rem;
@@ -111,9 +111,13 @@ header {
 }
 
 main {
-	max-width: 60%;
+    max-width: 10em;
 	margin-top: 2em;
 	padding: 2em 2em;
+}
+
+main p {
+    max-width: 60cw;
 }
 
 .post {
@@ -150,7 +154,9 @@ main {
 /* -------------------------------------------------------------- [POST] */
 
 .post-info {
-	margin-top: 1em;
+    text-decoration: none !important;
+	margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 .post-info, .post-tags {
@@ -160,14 +166,13 @@ main {
 }
 
 .post-info i:nth-child(2) {
-	text-decoration: none !important;
 	padding-left: 1em;
 }
 
 .tag {
-	background: var(--accent);
 	font-size: 0.8rem;
-	color: var(--background) !important;
+    background: var(--dracula-purple);
+	color: var(--foreground) !important;
 	padding: .1em .2em;
 	margin: .8em 0 0 .4em;
 	border-radius: .5em;
@@ -229,7 +234,7 @@ td, th {
 
 #footer {
 	min-width: 100% !important;
-	color: var(--forground) !important;
+	color: var(--foreground) !important;
 	padding-top: 0! important;
 	padding-bottom: 2em;
 	border-radius: 0.7rem;
@@ -239,14 +244,14 @@ footer p {
 	margin-top: 2em;
 	font-size: 0.9em;
 	font-family: 'VC Honey Deck', serif;
-	color: #F8F8F2;
+	color: var(--foreground);
 	text-align: center;
 	padding: 2em 2em;
 }
 
 #footer a {
 	text-transform: lowercase;
-	color: var(--forground) !important;
+	color: var(--foreground) !important;
 	font-family: 'VC Honey Deck', serif;
 }
 
