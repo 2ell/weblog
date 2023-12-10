@@ -256,7 +256,9 @@ footer p {
 	padding: 2em 2em;
 }
 
+
 #footer a {
+    text-decoration: none !important;
 	text-transform: lowercase;
 	color: var(--foreground) !important;
 	font-family: 'VC Honey Deck', serif;
