@@ -147,7 +147,7 @@ main p {
 }
 
 .img-card {
-	border-radius: 50%;
+	border-radius: 40%;
 	max-height: 250px;
 	max-width: 250px;
 }
