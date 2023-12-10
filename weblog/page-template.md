@@ -21,9 +21,7 @@ Title: Page Template
 <body>
 
 <header>
-    <div class="image-container">
-        <img src="https://cdn.some.pics/laurel/64e91056c93bb.jpg">
-    </div>
+     <img class="header-img" src="https://cdn.some.pics/laurel/64e91056c93bb.jpg">
 	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
 	{navigation}
 </header>

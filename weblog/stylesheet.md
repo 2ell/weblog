@@ -124,6 +124,13 @@ main p {
 	padding-bottom: 2em;
 }
 
+.header-img {
+  border-radius: 0.7em;
+  opacity: 0.7;
+  filter: saturate(4);
+  background-blend-mode: multiply;
+}
+
 .image-container {
 	background-image: -webkit-linear-gradient(60deg, #bd93f9, #8be9fd) !important;
 	padding: 0.4rem;
