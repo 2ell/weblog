@@ -31,7 +31,6 @@ Location: /style.css
 
 * {
 	margin: auto;
-	size: 1em;
 }
 
 body {
@@ -157,7 +156,8 @@ main {
 }
 
 .post-info i:nth-child(2) {
-	margin-left: 1em;
+	text-decoration: none !important;
+	padding-left: 1em;
 }
 
 .tag {
