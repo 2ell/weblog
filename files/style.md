@@ -1,4 +1,4 @@
-Type: file
+Type: File
 Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
