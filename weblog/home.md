@@ -4,7 +4,7 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{weblog-title} {separator} home</title>
+<title>{weblog-title}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
@@ -17,7 +17,7 @@ Title: Landing Page Template
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 </head>
 <body>
 
