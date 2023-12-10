@@ -276,12 +276,10 @@ td, th {
 }
 
 footer p {
-	margin-top: 2em;
 	font-size: 0.9em;
 	font-family: 'VC Honey Deck', serif;
 	color: var(--foreground);
 	text-align: center;
-	padding: 2em 2em;
 }
 
 #footer a {
