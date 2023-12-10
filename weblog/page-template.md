@@ -22,7 +22,7 @@ Title: Page Template
 
 <header>
      <img class="header-img" src="https://cdn.some.pics/laurel/64e91056c93bb.jpg">
-	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
+	<h1 class="weblog-title"><a href="{base-path}" class="gradient">{weblog-title}</a></h1>
 		<h5 class="description">{weblog-description}</h5>
 	{navigation}
 </header>
@@ -40,8 +40,9 @@ Title: Page Template
 </main>
 
 <footer>
-	<p>Made with <a href="https://weblog.lol">weblog.lol</a>.</p>
-</footer>
+	<p>handmade with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></p>
+	<p>powered by <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a>'s super nifty <a href="https://weblog.lol">weblog</a> service </p>
+	</footer>
 
 </body>
 </html>
