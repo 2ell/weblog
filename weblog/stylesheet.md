@@ -134,7 +134,7 @@ main p {
 .image-container {
 	background-image: -webkit-linear-gradient(60deg, #bd93f9, #8be9fd) !important;
 	padding: 0;
-	border-radius: 0.7em;
+	border-radius: 0;
  }
 
 .image-container img {
