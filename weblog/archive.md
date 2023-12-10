@@ -4,6 +4,6 @@ Template: Page Template
 Location: /archive
 
 
-#### All Posts
+<h3>All Posts</h3>
 
 {post-list}
