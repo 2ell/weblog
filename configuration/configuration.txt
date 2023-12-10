@@ -8,7 +8,7 @@ Weblog description:
 Author: laurel
 // Canonical domain: elsewhere.tld
 // Landing page: /
-Landing page template: Landing Page Template
+Landing page template: Main Template
 
 
 ;; General config stuff
