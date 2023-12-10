@@ -112,7 +112,7 @@ header {
 
 main {
     max-width: 30em;
-	margin-top: 2em;
+	margin-top: 1em;
 	padding: 2em 2em;
 }
 
