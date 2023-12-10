@@ -51,24 +51,45 @@ body {
 }
 
 
-/* -------------------------------------------------------------------------------------- [ TITLE ] */
+/* -------------------------------------------------------------------------------------------- [ TITLES ] */
 
-	
 .weblog-title a {
 	font-size: 3rem;
-	color: var(--foreground) !important;
 	margin: 0;
 }
 
-#author {
-	color: var(--background);
-	display: none;
-	font-size:1.5em;
-	margin-top: -1rem;
-	margin-left: 1rem;
+.weblog-title a:hover {
+	text-transform: underline !important;
 }
 
-/* -------------------------------------------------------------------------------------- [ NAV ] */
+.description {
+	color: var(--foreground);
+	opacity: 0.9;
+	margin-top: -1rem;
+}
+
+.gradient:hover {
+    background-image: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan)) !important;
+	background-size: 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/* ----------------------------------------------------------------------------------------- [ HEADER/NAV ] */
+
+header {	
+	background: #44475a;
+	border-radius: 0.7em;
+	max-width: 30em;
+}
+
+
+header {
+	margin-top: 2em;
+	padding: 2em 2em;
+}
 
 header nav ul {
 	list-style-type: none;
@@ -86,7 +107,7 @@ header nav li a {
 	margin-right: 1em;
 }
 
-/* -------------------------------------------------------------------------------------- [ TYPE ] */
+/* ----------------------------------------------------------------------------------------------- [ TYPE ] */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'VC Honey Deck', serif;
@@ -95,9 +116,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p, li {
+	max-width: 60cw;
 	line-height: 1.5em;
 }
-
 
 a:link { color: #9580ff; }
 a:visited { color: #9580ff; }
@@ -108,26 +129,10 @@ a:active { color: #6272A4; }
 /* -------------------------------------------------------------------------------------- [ SECTIONS ] */
 
 
-header {	
-	background: #44475a;
-	border-radius: 0.7em;
-	max-width: 30em;
-}
-
-
-header {
-	margin-top: 2em;
-	padding: 2em 2em;
-}
-
 main {
     max-width: 30em;
 	margin-top: 1em;
 	padding: 2em 2em;
-}
-
-main p {
-    max-width: 60cw;
 }
 
 .post {
@@ -135,7 +140,7 @@ main p {
 }
 
 .header-img {
-  border-radius: 0.7em;
+  border-radius: 100em;
   opacity: 0.7;
   filter: saturate(4) !important;
   background-blend-mode: multiply;
@@ -169,7 +174,7 @@ main p {
 	margin: 0 .3em -.1em 0;
 }
 
-/* -------------------------------------------------------------- [POST] */
+/* ------------------------------------------------------------------------------------------- [POST] */
 
 .post-info {
     text-decoration: none !important;
@@ -285,7 +290,7 @@ footer p {
 
 <header>
     <img class="header-img" src="https://cdn.some.pics/laurel/64e91056c93bb.jpg">
-	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
+	<h1 class="weblog-title"><a href="{base-path}" class="gradient">{weblog-title}</a></h1>
 	<h5 class="description">{weblog-description}</h5>
 	{navigation}
 </header>
