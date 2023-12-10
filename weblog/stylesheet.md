@@ -237,6 +237,10 @@ td, th {
 	border: 1px solid var(--accent);
 }
 
+.page-spacing {
+	margin-bottom: 2em;
+}
+
 /* -------------------------------------------------------------------------------------- [ FOOTER ] */
 
 #footer {

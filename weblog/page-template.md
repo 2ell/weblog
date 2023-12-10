@@ -31,7 +31,9 @@ Title: Page Template
 {body}
 
 
-<span class="divider"></span>
+<div class="page-spacing">
+</div>
+
 <hr>
 
 </main>
