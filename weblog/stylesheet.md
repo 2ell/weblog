@@ -149,6 +149,10 @@ main {
 
 /* -------------------------------------------------------------- [POST] */
 
+.post-info {
+	margin-top: 1em;
+}
+
 .post-info, .post-tags {
 	font-size: 0.9em;
 	color: var(--accent);
