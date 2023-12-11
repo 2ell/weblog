@@ -1,6 +1,7 @@
 Type: Template
 Title: Post Template
 
+<div class="card">
 <article>
 {body}
 <aside class="post-info">
@@ -10,5 +11,6 @@ Title: Post Template
 	{tags}
 </aside>
 </article>
+</div>
 
 <span class="divider"></span>
