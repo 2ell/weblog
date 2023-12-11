@@ -133,7 +133,8 @@ Tags format: <<[
 Tag page format: <<[
 <h2>“$tag” posts</h2>
 [tag:begin]<a href="$location">$title</a>
-<p>$snippet</p>
+<p>$date</p>
+<p>$body</p>
 [tag:end]
 ]>>
 
