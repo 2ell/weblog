@@ -129,6 +129,7 @@ header {
   background-blend-mode: multiply;
   display: block;
   margin: auto !important;
+  padding-bottom: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -210,7 +211,7 @@ main {
 
 .img-box {
 	padding: 0;
-	max-width: 90%;
+	max-width: 60%;
     margin: auto;
  }
 
