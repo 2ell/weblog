@@ -16,6 +16,7 @@ Location: /style.css
   	--orange: #ffb86c;
   	--pink: #ff79c6;
   	--purple: #bd93f9;
+	  --purple-faint: #ac9cc2;
   	--red: #ff5555;
   	--yellow: #f1fa8c;
 }
@@ -79,6 +80,20 @@ body {
 	margin-top: -0.1rem;
 }
 
+.shadow {
+	text-shadow: 6px 6px 0px #0000000c;
+	z-index: 1;
+}
+
+.gradient1 {
+background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
+	background-size: cover;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+	z-index: 10;
+}
+
 .gradient:hover {
     background-image: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan)) !important;
 	background-size: cover;
@@ -118,10 +133,15 @@ header nav li {
 }
 
 header nav li a {
-	display: block;
+	display: inline-block;
+	float: left;
 	text-align: center;
 	text-decoration: none;
-	margin-right: 1rem;
+}
+
+header nav li a:hover {
+	color: var(--foreground);
+	text-shadow: 6px 6px 0px #0000000c;
 }
 
 /* ----------------------------------------------------------------------------------------------- [ TYPE ] */
@@ -129,6 +149,7 @@ header nav li a {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'VC Honey Deck', serif;
 	margin: 1rem 0;
+	text-shadow: 6px 6px 0px #0000000c;
 }
 
 
@@ -157,7 +178,7 @@ main {
 }
 
 .post {
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 }
 
 .header-img {
@@ -172,7 +193,7 @@ main {
 	padding: 0;
 	border-radius: 0;
 	max-width: 50%;
-    margin: 0;
+    margin: auto;
  }
 
 .image-container img {
@@ -202,6 +223,7 @@ main {
     text-decoration: none !important;
 	margin-top: 1.5em;
     margin-bottom: 1em;
+	text-shadow: 6px 6px 0px #0000000c;
 }
 
 .post-info, .post-tags {
@@ -226,7 +248,7 @@ main {
 }
 
 .post-info i {
-	padding-right: 0.5rem;
+	padding-right: 0.2rem;
 }
 
 .stream {
@@ -280,7 +302,7 @@ td, th {
 #footer {
 	min-width: 100% !important;
 	color: var(--foreground) !important;
-	padding-top: 0! important;
+	padding-top: 2em;
 	padding-bottom: 2em;
 	border-radius: 0.7rem;
 }
