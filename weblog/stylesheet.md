@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -49,7 +48,7 @@ body {
 
 
 .centre {
-	text-align: center;
+	text-align: center !important;
 }
 
 /* -------------------------------------------------------------------------------------------- [ TITLES ] */
@@ -324,6 +323,10 @@ td, th {
 /* -------------------------------------------------------------------------------------- [ FOOTER ] */
 
 footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 	margin-top: 1em;
 	background-color: var(--main-color) !important;
 	color: var(--foreground) !important;
@@ -345,4 +348,3 @@ footer p {
 	color: var(--foreground) !important;
 	font-family: 'VC Honey Deck', serif;
 }
-
