@@ -66,14 +66,9 @@ body {
     font-size: 2rem;
   }
 
-	header {	
-	max-width: 95vw;
-}
-
   header nav li a {
-	display: none;
 	font-size: 0.8rem;
-	margin-right: 0.5rem;
+	padding: 0.2rem;
   }
 
 }
@@ -170,7 +165,7 @@ a:active { color: var(--pink); }
 
 main a, footer  a {
 	text-decoration: none;
-	border-bottom: 1px dotted var(--purple);
+	border-bottom: 1px dotted var(--purple-faint);
 }
 
 /* -------------------------------------------------------------------------------------- [ SECTIONS ] */
@@ -223,13 +218,12 @@ main {
 /* ------------------------------------------------------------------------------------------- [POST] */
 
 aside {
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 }
 
 .post-info {
     text-decoration: none !important;
 	margin-top: 1.5em;
-    margin-bottom: 1em;
 	text-shadow: 6px 6px 0px #0000000c;
 }
 
@@ -245,13 +239,17 @@ aside {
 
 .tag {
 	font-size: 0.8rem;
-    background-color: var(--dracula-purple);
-	color: var(--foreground) !important;
+    background-color: var(--purple);
+	color: var(--background) !important;
 	padding: .1em .2em;
 	margin: .8em 0 0 .4em;
-	border-radius: .5em;
-	text-decoration: none !important;
+	border-radius: 0.7em;
 	display: inline-block;
+}
+
+.tag a {
+	border-bottom: none !important;
+	text-decoration: none !important;
 }
 
 .post-info i {
