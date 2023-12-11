@@ -22,13 +22,18 @@ Location: /style.css
   	--yellow: #f1fa8c;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-	--foreground: #F8F8F2;
-	--background: #282A36;
-	--link: #9580ff;
-	--accent: #BD93F9;
-	}
+
+/* -------------------------------------------------------------------------------------------- [ MOBILE ] */
+@media (max-width: 600px) {
+  .weblog-title a {
+    font-size: 2rem;
+  }
+
+  header nav li a {
+	font-size: 0.8rem;
+	padding: 0.2rem;
+  }
+
 }
 
 * {
@@ -61,18 +66,6 @@ body {
 	line-height: 3.5rem;
 }
 
-@media (max-width: 600px) {
-  .weblog-title a {
-    font-size: 2rem;
-  }
-
-  header nav li a {
-	font-size: 0.8rem;
-	padding: 0.2rem;
-  }
-
-}
-
 .description {
 	text-align: center;
 	color: var(--foreground);
@@ -80,9 +73,16 @@ body {
 	margin-top: -0.1rem;
 }
 
+
+/* -------------------------------------------------------------------------------------------- [ EFFECTS ] */
+
 .shadow {
 	text-shadow: 6px 6px 0px #0000000c;
 	z-index: 1;
+}
+
+.b-shadow {
+	box-shadow: 6px 6px 0px #0000000c;
 }
 
 .gradient1 {
@@ -116,6 +116,7 @@ header {
 header {
 	margin-top: 2em;
 	padding: 2em 2em;
+	box-shadow: 6px 6px 6px 6px #0000000c;
 }
 
 header nav {
@@ -177,8 +178,10 @@ main {
 	padding: 2em 2em;
 }
 
-.post {
-	padding-bottom: 4em;
+.card {
+	padding: 1rem;
+	border-radius: 0.7rem;
+	box-shadow: 6px 6px 6px 6px #0000000c;
 }
 
 .header-img {
@@ -217,8 +220,12 @@ main {
 
 /* ------------------------------------------------------------------------------------------- [POST] */
 
+article {
+	margin-top: 1rem;
+}
+
 aside {
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5rem;
 }
 
 .post-info {
@@ -267,6 +274,18 @@ hr {
 	border: 0;
 }
 
+.div-yellow {
+	margin-top: 1em;
+	background-image: linear-gradient(120deg, var(--purple), var(--yellow), var(--purple));
+	height: 0.01rem;
+}
+
+.div-pink {
+	margin-top: 1em;
+	background-image: linear-gradient(120deg, var(--pink), var(--cyan), var(--pink));
+	height: 0.01rem;
+}
+
 code {
 	padding: .2em .3em;
 	border: 1px solid var(--accent);
@@ -305,15 +324,12 @@ td, th {
 /* -------------------------------------------------------------------------------------- [ FOOTER ] */
 
 footer {
-	padding-top: 5em;
-}
-
-#footer {
-	min-width: 100% !important;
+	margin-top: 1em;
+	background-color: var(--main-color) !important;
 	color: var(--foreground) !important;
 	padding-top: 2em;
-	padding-bottom: 2em;
-	border-radius: 0.7rem;
+	padding-bottom: 1em;
+	box-shadow: 6px 6px 6px 6px #0000000c;
 }
 
 footer p {
@@ -329,3 +345,4 @@ footer p {
 	color: var(--foreground) !important;
 	font-family: 'VC Honey Deck', serif;
 }
+
