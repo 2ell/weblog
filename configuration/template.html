@@ -246,7 +246,7 @@ main {
 /* ------------------------------------------------------------------------------------------- [POST] */
 
 article {
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 }
 
 aside {
@@ -259,10 +259,15 @@ aside {
 	text-shadow: 6px 6px 0px #0000000c;
 }
 
-.post-info, .post-tags {
+.post-info {
 	font-size: 0.9em;
 	color: var(--accent);
 	text-align: right;
+}
+
+.post-tags {
+	margin-top: 1.5rem;
+	text-align: left;
 }
 
 .post-info i:nth-child(2) {
@@ -302,13 +307,21 @@ hr {
 .div-yellow {
 	margin-top: 1em;
 	background-image: linear-gradient(120deg, var(--purple), var(--yellow), var(--purple));
-	height: 0.01rem;
+	height: 0.1rem;
+	max-width: 100%;
 }
 
 .div-pink {
 	margin-top: 1em;
 	background-image: linear-gradient(120deg, var(--pink), var(--cyan), var(--pink));
 	height: 0.01rem;
+	max-width: 100%;
+}
+
+.recent {
+	max-width: 100%;
+	margin: 0.2rem;
+	padding: 1.5em;
 }
 
 code {
@@ -390,26 +403,27 @@ footer p {
 <main>
 
 <div class="card">
-	<hr class="div-pink"></hr>
-<article>
-	{body}
 	<aside class="post-info">
 		<i class="fa-solid fa-clock"></i> {date}
 	</aside>
+	<hr class="div-pink"></hr>
+<article>
+	{body}
 	<aside class="post-tags">
 		{tags}
 	</aside>
 </article>
 </div>
 
-<div class="card">
-	<hr class="div-yellow"> </hr>
-<h2>Recent Posts</h2>
-
-{recent-posts}
-</div>
 
 </main>
+
+<div class="recent">
+	<hr class="div-yellow"> </hr>
+	<h2>Recent Posts</h2>
+	
+	{recent-posts}
+	</div>
 
 <footer>
 	<p>handmade with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></p>

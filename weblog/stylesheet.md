@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -21,18 +22,8 @@ Location: /style.css
   	--yellow: #f1fa8c;
 }
 
+
 /* -------------------------------------------------------------------------------------------- [ MOBILE ] */
-@media (max-width: 600px) {
-  .weblog-title a {
-    font-size: 2rem;
-  }
-
-  header nav li a {
-	font-size: 0.8rem;
-	padding: 0.2rem;
-  }
-
-}
 
 * {
 	margin: auto;
@@ -45,6 +36,8 @@ body {
 	background: var(--background);
 }
 
+
+/* -------------------------------------------------------------------------------------- [ OVERRIDES ] */
 
 .centre {
 	text-align: center !important;
@@ -80,6 +73,11 @@ body {
 	margin-top: -0.1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .weblog-title a {
+    font-size: 2.8rem !important;
+  }
+}
 
 /* -------------------------------------------------------------------------------------------- [ EFFECTS ] */
 
@@ -116,14 +114,32 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 header {	
 	background: #44475a;
 	border-radius: 0.7em;
-	max-width: 50vw;
-}
-
-
-header {
+	max-width: 60%;
+	margin: auto;
 	margin-top: 2em;
 	padding: 2em 2em;
 	box-shadow: 6px 6px 6px 6px #0000000c;
+}
+
+.header-img {
+  border-radius: 0.7em;
+  opacity: 0.7;
+  filter: saturate(4) !important;
+  background-blend-mode: multiply;
+  display: block;
+  margin: auto !important;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+	width: 65%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+	width: 80%;
+  }
 }
 
 header nav {
@@ -180,22 +196,15 @@ main a, footer  a {
 
 
 main {
-    max-width: 30em;
+	max-width: 80%;
 	margin-top: 0.4em;
-	padding: 2em 2em;
+	padding: 0em 0em;
 }
 
 .card {
 	padding: 1rem;
 	border-radius: 0.7rem;
 	box-shadow: 6px 6px 6px 6px #0000000c;
-}
-
-.header-img {
-  border-radius: 0.7em;
-  opacity: 0.7;
-  filter: saturate(4) !important;
-  background-blend-mode: multiply;
 }
 
 .img-box {
@@ -228,7 +237,7 @@ main {
 /* ------------------------------------------------------------------------------------------- [POST] */
 
 article {
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 }
 
 aside {
@@ -241,10 +250,15 @@ aside {
 	text-shadow: 6px 6px 0px #0000000c;
 }
 
-.post-info, .post-tags {
+.post-info {
 	font-size: 0.9em;
 	color: var(--accent);
 	text-align: right;
+}
+
+.post-tags {
+	margin-top: 1.5rem;
+	text-align: left;
 }
 
 .post-info i:nth-child(2) {
@@ -284,13 +298,21 @@ hr {
 .div-yellow {
 	margin-top: 1em;
 	background-image: linear-gradient(120deg, var(--purple), var(--yellow), var(--purple));
-	height: 0.01rem;
+	height: 0.1rem;
+	max-width: 100%;
 }
 
 .div-pink {
 	margin-top: 1em;
 	background-image: linear-gradient(120deg, var(--pink), var(--cyan), var(--pink));
 	height: 0.01rem;
+	max-width: 100%;
+}
+
+.recent {
+	max-width: 100%;
+	margin: 0.2rem;
+	padding: 1.5em;
 }
 
 code {
