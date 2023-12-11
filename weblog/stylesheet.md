@@ -174,10 +174,9 @@ main a, footer  a {
 
 /* -------------------------------------------------------------------------------------- [ SECTIONS ] */
 
-
 main {
     max-width: 30em;
-	margin-top: 1em;
+	margin-top: 0.4em;
 	padding: 2em 2em;
 }
 
