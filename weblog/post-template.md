@@ -13,4 +13,5 @@ Title: Post Template
 </article>
 </div>
 
-<span class="divider"></span>
+<div class="spacing">
+</div>
