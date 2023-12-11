@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -188,15 +189,13 @@ main {
   background-blend-mode: multiply;
 }
 
-.image-container {
-	background-image: -webkit-linear-gradient(60deg, #bd93f9, #8be9fd) !important;
+.img-box {
 	padding: 0;
-	border-radius: 0;
-	max-width: 50%;
+	max-width: 90%;
     margin: auto;
  }
 
-.image-container img {
+.img-box img {
   margin: 0 !important;
   padding: 0 !important;
   border-radius: 0.7em;
@@ -298,6 +297,10 @@ td, th {
 }
 
 /* -------------------------------------------------------------------------------------- [ FOOTER ] */
+
+footer {
+	padding-top: 5em;
+}
 
 #footer {
 	min-width: 100% !important;
