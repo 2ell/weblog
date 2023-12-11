@@ -43,7 +43,7 @@ body {
 }
 
 
-.center {
+.centre {
 	text-align: center;
 }
 
@@ -139,7 +139,7 @@ header nav li {
 
 header nav li a {
 	display: inline-block;
-	float: left;
+	padding: 0.4rem;
 	text-align: center;
 	text-decoration: none;
 }
@@ -222,6 +222,10 @@ main {
 
 /* ------------------------------------------------------------------------------------------- [POST] */
 
+aside {
+	margin-bottom: 2em;
+}
+
 .post-info {
     text-decoration: none !important;
 	margin-top: 1.5em;
@@ -241,12 +245,12 @@ main {
 
 .tag {
 	font-size: 0.8rem;
-    background: var(--dracula-purple);
+    background-color: var(--dracula-purple);
 	color: var(--foreground) !important;
 	padding: .1em .2em;
 	margin: .8em 0 0 .4em;
 	border-radius: .5em;
-	text-decoration: none;
+	text-decoration: none !important;
 	display: inline-block;
 }
 
