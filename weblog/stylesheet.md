@@ -289,13 +289,6 @@ aside {
 	max-width: 50%;
 }
 
-hr {
-	background-image: linear-gradient(135deg, var(--purple), var(--cyan));
-	background-size: 100%;
-	padding: 0.04rem;
-	border: 0;
-}
-
 .div-yellow {
 	margin-top: 1em;
 	background-image: linear-gradient(120deg, var(--purple), var(--yellow), var(--purple));
