@@ -1,6 +1,6 @@
-Date: 2023-12-09 23:14
+Date: 2023-12-10 18:51
 Tags: photo
 
-<div class="img-box"><img alt="Flowers and spring foliage gently disrupting the view of a pale, soft sunset over calm lake waters." src="https://cdn.some.pics/laurel/65755692a9ffc.jpg"></div>
+<div class="img-box"><img alt="Cotton candy sunrise greeting a quiet inner city street at the cusp of fall. Tree branches and traffic poles are seen by their silhouettes against the pastel swirl of the morning sun and sky." src="https://cdn.some.pics/laurel/65766b3770711.jpg"></div>
 
-<p class="centre">Attempting a titleless image post, for testing reasons. Summer 2015.</p>
+<p class="centre">17th Ave sunrise from a hot second ago. Fall 2016.</p>
