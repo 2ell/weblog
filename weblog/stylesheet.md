@@ -21,7 +21,6 @@ Location: /style.css
   	--yellow: #f1fa8c;
 }
 
-
 /* -------------------------------------------------------------------------------------------- [ MOBILE ] */
 @media (max-width: 600px) {
   .weblog-title a {
@@ -53,6 +52,10 @@ body {
 
 .spacing {
 	min-height: 2em;
+	margin-bottom: 2em;
+}
+
+.post-spacing {
 	margin-bottom: 2em;
 }
 
@@ -174,6 +177,7 @@ main a, footer  a {
 }
 
 /* -------------------------------------------------------------------------------------- [ SECTIONS ] */
+
 
 main {
     max-width: 30em;
