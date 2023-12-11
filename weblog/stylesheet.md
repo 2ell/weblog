@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -49,6 +48,8 @@ body {
 }
 
 .post-spacing {
+	color: transparent;
+	border: 0;
 	margin-bottom: 2em;
 }
 
@@ -241,7 +242,7 @@ article {
 }
 
 aside {
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .post-info {
