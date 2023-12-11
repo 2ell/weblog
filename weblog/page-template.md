@@ -32,11 +32,9 @@ Title: Page Template
 {body}
 
 
-<div class="page-spacing">
+<hr class="div-pink"></hr>
+<div class="spacing">
 </div>
-
-<hr>
-
 </main>
 
 <footer>

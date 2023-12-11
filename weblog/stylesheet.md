@@ -51,6 +51,10 @@ body {
 	text-align: center !important;
 }
 
+.spacing {
+	min-height: 2em;
+}
+
 /* -------------------------------------------------------------------------------------------- [ TITLES ] */
 
 .weblog-title {
