@@ -4,6 +4,6 @@ Template: Page Template
 Location: /archive
 
 
-<h1 class="gradient">Archive</h1>
+<h1>Archive</h1>
 
 {post-list}
