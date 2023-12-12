@@ -208,13 +208,11 @@ main {
 }
 
 .img-box {
-	padding: 0;
-	max-width: 70%;
+	max-width: 80%;
     margin: auto;
  }
 
 .img-box img {
-  margin: 0 !important;
   padding: 0 !important;
   border-radius: 0.7em;
   opacity: 0.7;
@@ -241,7 +239,7 @@ article {
 }
 
 .post-info-container {
-	padding-bottom: 0.5rem;
+	padding-bottom: 2rem;
 }
 
 .post-info {
