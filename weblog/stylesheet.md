@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -20,6 +19,8 @@ Location: /style.css
 	  --purple-faint: #ac9cc2;
   	--red: #ff5555;
   	--yellow: #f1fa8c;
+
+	--gradient1: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan));
 }
 
 
@@ -66,6 +67,7 @@ body {
 	font-size: 3rem;
 	padding-top: 1.5rem;
 	line-height: 3.5rem;
+	text-decoration: underline !important;
 }
 
 .description {
@@ -75,24 +77,19 @@ body {
 	margin-top: -0.1rem;
 }
 
-@media screen and (max-width: 600px) {
-  .weblog-title a {
-    font-size: 2.8rem !important;
-  }
-}
 
 /* -------------------------------------------------------------------------------------------- [ EFFECTS ] */
 
 .shadow {
-	text-shadow: 6px 6px 0px #0000000c;
+	text-shadow: 6px 6px 0px #000000;
 	z-index: 1;
 }
 
 .b-shadow {
-	box-shadow: 6px 6px 0px #0000000c;
+	box-shadow: 6px 6px 6px 6px #0000000c;
 }
 
-.gradient1 {
+.gradient-yb {
 background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 	background-size: cover;
     color: transparent !important;
@@ -101,12 +98,12 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 	z-index: 10;
 }
 
-.gradient:hover {
+.gradient {
     background-image: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan)) !important;
 	background-size: cover;
     color: transparent !important;
     -webkit-background-clip: text;
-    background-clip:;
+    background-clip: text;
 	z-index: 10;
 }
 
@@ -190,7 +187,7 @@ a:visited { color: var(--purple); }
 a:hover { color: var(--pink); }
 a:active { color: var(--pink); }
 
-main a, footer  a {
+main a, footer a, nav a {
 	text-decoration: none;
 	border-bottom: 1px dotted var(--purple-faint);
 }
@@ -207,7 +204,7 @@ main {
 .card {
 	padding: 1rem;
 	border-radius: 0.7rem;
-	box-shadow: 6px 6px 6px 6px #0000000c;
+	box-shadow: 2px 2px 2px 2px #0000002c;
 }
 
 .img-box {
@@ -240,22 +237,26 @@ main {
 /* ------------------------------------------------------------------------------------------- [POST] */
 
 article {
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 }
 
-aside {
-	margin-bottom: 0.5rem;
+.post-info-container {
+	padding-bottom: 0.5rem;
 }
 
 .post-info {
     text-decoration: none !important;
-	margin-top: 1.5em;
+	margin-top: 0em;
+	margin-right: -1rem;
+	box-shadow: 2px 2px 2px -0em 1px #000;
+	padding: 0.2rem;
+	max-width: fit-content;
+	float: right;
 	text-shadow: 6px 6px 0px #0000000c;
-}
-
-.post-info {
 	font-size: 0.9em;
-	color: var(--accent);
+	background-image: var(--gradient1);
+	border-radius: 0.7rem  0rem 0rem 0.7rem;
+	color: var(--background);
 	text-align: right;
 }
 
@@ -272,7 +273,7 @@ aside {
 	font-size: 0.8rem;
     background-color: var(--purple);
 	color: var(--background) !important;
-	padding: .1em .2em;
+	padding: .02rem;
 	margin: .8em 0 0 .4em;
 	border-radius: 0.7em;
 	display: inline-block;
@@ -284,17 +285,18 @@ aside {
 }
 
 .post-info i {
-	padding-right: 0.2rem;
+	padding-right: 0.1rem;
 }
 
 .stream {
 	max-width: 50%;
 }
 
-.div-yellow {
+.divider {
 	margin-top: 1em;
-	background-image: linear-gradient(120deg, var(--purple), var(--yellow), var(--purple));
-	height: 0.1rem;
+	background-image: var(--gradient1);
+	height: 0.09rem;
+	border: 0;
 	max-width: 100%;
 }
 
