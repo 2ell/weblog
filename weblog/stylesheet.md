@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -115,7 +116,7 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 header {	
 	background: #44475a;
 	border-radius: 0.7em;
-	max-width: 60%;
+	max-width: 600px;
 	margin: auto;
 	margin-top: 2em;
 	padding: 2em 2em;
@@ -198,7 +199,7 @@ main a, footer  a {
 
 
 main {
-	max-width: 80%;
+	max-width: 600px;
 	margin-top: 0.4em;
 	padding: 0em 0em;
 }
@@ -211,7 +212,7 @@ main {
 
 .img-box {
 	padding: 0;
-	max-width: 60%;
+	max-width: 70%;
     margin: auto;
  }
 
@@ -305,8 +306,8 @@ aside {
 }
 
 .recent {
-	max-width: 100%;
-	margin: 0.2rem;
+	max-width: 600px;
+	margin: auto;
 	padding: 1.5em;
 }
 
