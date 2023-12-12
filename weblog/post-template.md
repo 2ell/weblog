@@ -10,9 +10,6 @@ Title: Post Template
 </div>
 <article>
 	{body}
-	<aside class="post-tags">
-		{tags}
-	</aside>
 </article>
 </div>
 
