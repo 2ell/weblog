@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -179,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li {
 	max-width: 60cw;
-	line-height: 1.5em;
+	line-height: 2em;
 }
 
 a:link { color: var(--purple); }
@@ -187,7 +188,7 @@ a:visited { color: var(--purple); }
 a:hover { color: var(--pink); }
 a:active { color: var(--pink); }
 
-main a, footer a, nav a {
+main a, footer a {
 	text-decoration: none;
 	border-bottom: 1px dotted var(--purple-faint);
 }
@@ -216,7 +217,7 @@ main {
   padding: 0 !important;
   border-radius: 0.7em;
   opacity: 0.7;
-  filter: saturate(4);
+  filter: saturate(2);
   background-blend-mode: multiply;
 }
 
@@ -236,6 +237,7 @@ main {
 
 article {
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .post-info-container {
@@ -273,13 +275,17 @@ article {
 	color: var(--background) !important;
 	padding: .02rem;
 	margin: .8em 0 0 .4em;
-	border-radius: 0.7em;
+	border-radius: 0.7rem;
 	display: inline-block;
 }
 
 .tag a {
 	border-bottom: none !important;
 	text-decoration: none !important;
+}
+
+.tag:hover {
+	background-image: var(--gradient1);
 }
 
 .post-info i {
