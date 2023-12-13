@@ -274,7 +274,7 @@ article {
     text-decoration: none !important;
 	margin-top: 0em;
 	margin-right: -1rem;
-	padding: 0.2rem;
+	padding: 0.5rem;
 	max-width: fit-content;
 	float: right;
 	text-shadow: 6px 6px 0px #0000000c;
@@ -287,8 +287,14 @@ article {
 
 .post-info a {
 	color: var(--background);
-	border-bottom: 1px dotted var(--background);
+	border-bottom: 1px solid var(--background);
 }
+
+.post-info:hover a {
+	color: var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+
 
 /* ----------------------------------- [DATE SVG]
 */
@@ -312,7 +318,7 @@ article {
 	font-size: 0.8rem;
     background-color: var(--purple);
 	color: var(--background) !important;
-	padding: 1rem;
+	padding: 0.7rem;
 	margin: .8em 0 0 .4em;
 	border-radius: 0.7rem;
 	display: inline-block;
