@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -333,6 +334,8 @@ article {
 
 blockquote {
 	margin-left: 0.5rem;
+	margin-top: 0;
+	margin-bottom: 0;
 	padding: 1rem;
 	border-left: 2px solid var(--purple);
 	color: var(--yellow);
@@ -340,6 +343,28 @@ blockquote {
 
 blockquote p {
 	display: inline;
+}
+
+
+blockquote p:first-of-type:before {
+	content: '\201c';
+	position: absolute;
+	left: -.5em;
+}
+
+blockquote p:last-of-type:after {
+	content: '\201d';
+	position: absolute;
+}
+
+blockquote footer {
+	position: relative;
+}
+
+blockquote footer:before {
+	content: '–';
+	position: absolute;
+	left: -.6em;
 }
 
 code {
