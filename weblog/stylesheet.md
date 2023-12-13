@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -309,7 +310,7 @@ article {
 	font-size: 0.8rem;
     background-color: var(--purple);
 	color: var(--background) !important;
-	padding: 0.7rem;
+	padding: 0.5rem;
 	margin: .8em 0 0 .4em;
 	border-radius: 0.7rem;
 	display: inline-block;
@@ -333,15 +334,16 @@ article {
 */
 
 blockquote {
-	margin-left: 0.5rem;
+	line-height: 1em;
+	margin-left: 0.3rem;
 	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 1.5rem;
-	border-left: 2px solid var(--purple);
+	margin-bottom: 1rem;
+	padding: 1rem;
 }
 
 blockquote p {
 	display: inline;
+	font-family: 'VC Honey Deck', serif;
 	color: var(--purple);
 }
 
@@ -350,24 +352,19 @@ blockquote p:before {
 	content: '\201c';
 	position: absolute;
 	color: var(--purple);
-	font-size: 1em;
-	left: .5rem;
+	font-size: 10em;
+	margin-left: -0.7rem;
+	margin-top: 3rem;
+	opacity: 0.1;
 }
 
-blockquote p:last-of-type:after {
-	content: '\201d';
-	position: absolute;
-	color: var(--purple);
+blockquote .footer {
+	padding-top: 0.5rem;
 }
 
-blockquote footer {
-	position: relative;
-}
-
-blockquote footer:before {
-	content: '–';
-	position: absolute;
-	left: -.2rem;
+blockquote .footer:before {
+	content: '—';
+	padding-right: 0.5rem;
 }
 
 code {
