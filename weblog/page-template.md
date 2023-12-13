@@ -22,7 +22,7 @@ Title: Page Template
 
 <header>
      <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
-	<h1 class="weblog-title"><a href="{base-path}" class="gradient">{weblog-title}</a></h1>
+<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
 		<h5 class="description">{weblog-description}</h5>
 	{navigation}
 </header>

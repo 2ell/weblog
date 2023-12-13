@@ -22,6 +22,7 @@ Location: /style.css
   	--yellow: #f1fa8c;
 
 	--gradient1: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan));
+	--gradient2: linear-gradient(20deg, var(--cyan), var(--purple), var(--yellow));
 }
 
 
@@ -52,23 +53,26 @@ body {
 
 .post-spacing {
 	color: transparent;
+	background-image: none;
 	border: 0;
 	margin-bottom: 2em;
 }
 
 /* -------------------------------------------------------------------------------------------- [ TITLES ] */
 
-.weblog-title {
+#weblog-title {
 	text-align: center;
 	margin: auto;
-	text-shadow: .1em .1em 0.2 hsla(202, 54%, 93%, 1);
 }
 
-.weblog-title a {
+#weblog-title a {
 	font-size: 3rem;
+	background-image: var(--gradient1);
+	color: transparent !important;
+	-webkit-background-clip: text;
+    	background-clip: text;
 	padding-top: 1.5rem;
 	line-height: 3.5rem;
-	text-decoration: underline !important;
 }
 
 .description {
@@ -123,16 +127,13 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
     background-clip: text;
 	z-index: 10;
 }
-
+/*
 .gradient {
-    background-image: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan)) !important;
-	background-size: cover;
-    color: transparent !important;
-    -webkit-background-clip: text;
-    background-clip: text;
-	z-index: 10;
+	background-image: var(--gradient1);
+	color: transparent !important;
+	-webkit-background-clip: text;
+    	background-clip: text;
 }
-
 
 /* ----------------------------------------------------------------------------------------- [ HEADER/NAV ] */
 
@@ -317,6 +318,7 @@ article {
 
 .tag:hover {
 	background-image: var(--gradient1);
+	transition: 4s;
 }
 
 
