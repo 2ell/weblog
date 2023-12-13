@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -107,7 +106,6 @@ hr {
 }
 
 
-
 /* -------------------------------------------------------------------------------------------- [ EFFECTS ] */
 
 .shadow {
@@ -182,6 +180,7 @@ header nav li a {
 	padding: 0.4rem;
 	text-align: center;
 	text-decoration: none;
+	border-bottom: 0;
 }
 
 header nav li a:hover {
@@ -265,7 +264,6 @@ article {
     text-decoration: none !important;
 	margin-top: 0em;
 	margin-right: -1rem;
-	box-shadow: 2px 2px 2px -0em 1px #000;
 	padding: 0.2rem;
 	max-width: fit-content;
 	float: right;
@@ -275,6 +273,11 @@ article {
 	border-radius: 0.7rem  0rem 0rem 0.7rem;
 	color: var(--background);
 	text-align: right;
+}
+
+.post-info a {
+	color: var(--background);
+	border-bottom: 1px dotted var(--background);
 }
 
 /* ----------------------------------- [DATE SVG]
