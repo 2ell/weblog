@@ -3,8 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
-
 :root {
 	--foreground: #F8F8F2;
 	--background: #282A36;
@@ -253,6 +251,10 @@ main {
 article {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+}
+
+article h1 a, article h2 a {
+	color: var(--foreground) !important;
 }
 
 /* ----------------------------------- [DATE]
