@@ -25,7 +25,7 @@ Location: /style.css
 }
 
 
-/* -------------------------------------------------------------------------------------------- [ MOBILE ] */
+/* -------------------------------------------------------------------------------------------- [ BODY ] */
 
 * {
 	margin: auto;
@@ -78,6 +78,31 @@ body {
 	margin-top: -0.1rem;
 }
 
+/* ------------------------------------------------------------------------------------------- [HR STYLES] */
+
+hr {
+	margin-top: 1em;
+	background-image: var(--gradient1);
+	height: 0.09rem;
+	border: 0;
+	max-width: 100%;
+}
+
+.divider {
+	margin-top: 1em;
+	background-image: var(--gradient1);
+	height: 0.09rem;
+	border: 0;
+	max-width: 100%;
+}
+
+.recent {
+	max-width: 600px;
+	margin: auto;
+	padding: 1.5em;
+}
+
+
 
 /* -------------------------------------------------------------------------------------------- [ EFFECTS ] */
 
@@ -117,7 +142,7 @@ header {
 	max-width: 600px;
 	margin: auto;
 	margin-top: 2em;
-	padding: 2em 2em;
+	padding: 1em 1em;
 	box-shadow: 6px 6px 6px 6px #0000000c;
 }
 
@@ -134,12 +159,6 @@ header {
 @media screen and (max-width: 600px) {
   header {
 	width: 65%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  main {
-	width: 80%;
   }
 }
 
@@ -162,6 +181,7 @@ header nav li a {
 	padding: 0.4rem;
 	text-align: center;
 	text-decoration: none;
+	border-bottom: 1px dotted var(--purple-faint);
 }
 
 header nav li a:hover {
@@ -193,13 +213,12 @@ main a, footer a {
 	border-bottom: 1px dotted var(--purple-faint);
 }
 
-/* -------------------------------------------------------------------------------------- [ SECTIONS ] */
-
+/* -------------------------------------------------------------------------------------- [ LAYOUT ] */
 
 main {
 	max-width: 600px;
-	margin-top: 0.4em;
-	padding: 0em 0em;
+	margin-top: 0.5em;
+	padding: 0;
 }
 
 .card {
@@ -209,7 +228,7 @@ main {
 }
 
 .img-box {
-	max-width: 80%;
+	max-width: 90%;
     margin: auto;
  }
 
@@ -240,6 +259,9 @@ article {
 	margin-bottom: 1rem;
 }
 
+/* ----------------------------------- [DATE]
+*/
+
 .post-info-container {
 	padding-bottom: 2rem;
 }
@@ -260,6 +282,15 @@ article {
 	text-align: right;
 }
 
+/* ----------------------------------- [DATE SVG]
+*/
+.post-info i {
+	padding-right: 0.1rem;
+}
+
+/* ----------------------------------- [TAGS]
+*/
+
 .post-tags {
 	margin-top: 1.5rem;
 	text-align: left;
@@ -271,9 +302,9 @@ article {
 
 .tag {
 	font-size: 0.8rem;
-    background-color: var(--purple);
+    background-color: var(--purple-faint);
 	color: var(--background) !important;
-	padding: .02rem;
+	padding: 0.2rem;
 	margin: .8em 0 0 .4em;
 	border-radius: 0.7rem;
 	display: inline-block;
@@ -288,34 +319,13 @@ article {
 	background-image: var(--gradient1);
 }
 
-.post-info i {
-	padding-right: 0.1rem;
-}
 
 .stream {
 	max-width: 50%;
 }
 
-.divider {
-	margin-top: 1em;
-	background-image: var(--gradient1);
-	height: 0.09rem;
-	border: 0;
-	max-width: 100%;
-}
-
-.div-pink {
-	margin-top: 1em;
-	background-image: linear-gradient(120deg, var(--pink), var(--cyan), var(--pink));
-	height: 0.01rem;
-	max-width: 100%;
-}
-
-.recent {
-	max-width: 600px;
-	margin: auto;
-	padding: 1.5em;
-}
+/* ----------------------------------- [MARKDOWN]
+*/
 
 code {
 	padding: .2em .3em;
