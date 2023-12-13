@@ -191,7 +191,6 @@ header nav li a {
 	padding: 0.4rem;
 	text-align: center;
 	text-decoration: none;
-	border-bottom: 1px dotted var(--purple-faint);
 }
 
 header nav li a:hover {
@@ -228,7 +227,8 @@ main a, footer a {
 main {
 	max-width: 600px;
 	margin-top: 0.5em;
-	padding: 0;
+	padding-right: 2em;
+	padding-left: 2em;
 }
 
 .card {
@@ -254,12 +254,6 @@ main {
 	border-radius: 40%;
 	max-height: 250px;
 	max-width: 250px;
-}
-
-.prami-logo {
-	height: 1em;
-	transition: all 0.3s ease;
-	margin: 0 .3em -.1em 0;
 }
 
 /* ------------------------------------------------------------------------------------------- [POST] */
@@ -312,9 +306,9 @@ article {
 
 .tag {
 	font-size: 0.8rem;
-    background-color: var(--purple-faint);
+    background-color: var(--purple);
 	color: var(--background) !important;
-	padding: 0.2rem;
+	padding: 1rem;
 	margin: .8em 0 0 .4em;
 	border-radius: 0.7rem;
 	display: inline-block;
@@ -326,8 +320,7 @@ article {
 }
 
 .tag:hover {
-	background-image: var(--gradient1);
-	transition: 4s;
+	background-image: var(--gradient2);
 }
 
 
@@ -337,6 +330,12 @@ article {
 
 /* ----------------------------------- [MARKDOWN]
 */
+
+blockquote {
+	margin-left: 0.5rem;
+	border-left: 1px solid var(--purple);
+	color: var(--yellow);
+}
 
 code {
 	padding: .2em .3em;
