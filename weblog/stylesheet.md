@@ -20,8 +20,8 @@ Location: /style.css
   	--red: #ff5555;
   	--yellow: #f1fa8c;
 
-	--gradient1: linear-gradient(20deg, var(--yellow), var(--purple), var(--cyan));
-	--gradient2: linear-gradient(20deg, var(--cyan), var(--purple), var(--yellow));
+	--gradient1: linear-gradient(135deg, var(--yellow), var(--purple), var(--cyan));
+	--gradient2: linear-gradient(135deg, var(--cyan), var(--purple), var(--yellow));
 }
 
 
@@ -273,15 +273,14 @@ article h1 a, article h2 a {
 	float: right;
 	text-shadow: 6px 6px 0px #0000000c;
 	font-size: 0.9em;
-	background-image: var(--gradient1);
 	border-radius: 0.7rem  0rem 0rem 0.7rem;
-	color: var(--background);
+	color: var(--foreground);
 	text-align: right;
 }
 
 .post-info a {
-	color: var(--background);
-	border-bottom: 1px solid var(--background);
+	color: var(--foreground);
+	border-bottom: 1px solid var(--foreground);
 }
 
 .post-info:hover a {
@@ -312,7 +311,7 @@ article h1 a, article h2 a {
 	font-size: 0.8rem;
     background-color: var(--purple);
 	color: var(--background) !important;
-	padding: 0.5rem;
+	padding: 0.3rem;
 	margin: .8em 0 0 .4em;
 	border-radius: 0.7rem;
 	display: inline-block;
