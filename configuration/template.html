@@ -7,15 +7,25 @@
 {feeds}
 <style>
 @import url('https://static.omg.lol/type/font-honey.css');
-@import url('https://static.omg.lol/type/font-lato-regular.css');
-@import url('https://static.omg.lol/type/font-lato-bold.css');
-@import url('https://static.omg.lol/type/font-lato-italic.css');
+@import url('/type/font-mint-grotesk-regular.css');
+@import url('/type/font-mint-grotesk-bold.css');
+@import url('/type/font-mint-grotesk-italic.css');
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
+@import url('/profiles/icons/omg.lol-icons.css?v=2');
+
+@font-face {
+	font-family: 'omg.lol';
+	src: url('data:font/woff2;charset=utf-8;base64,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') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
 
 /* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
+	--transparent2: #ffffff07;
 	--foreground: #F8F8F2;
 	--foreground-faded: #f8f8f25b;
 	--background: #282A36;
@@ -38,6 +48,14 @@
 
 	--border-radius: 0.7rem;
 }
+
+* {
+    -webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 
 
 /* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
@@ -76,8 +94,8 @@
 
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.2em;
+	font-family: 'Mint Grotesk', sans-serif;
+	font-size: 1em;
 	margin: 0;
 	padding: 2em;
 	color: var(--foreground);
@@ -91,7 +109,7 @@ a {
 	background-size: 0;
 	-webkit-background-clip: text;
     	background-clip: text;
-	border-bottom: 0.2rem solid var(--transparent);	
+	border-bottom: 0.2rem solid var(--transparent1);	
 	transition: all 0.6s ease-in-out;
 	padding-bottom: 0;
 }
@@ -132,7 +150,9 @@ a:hover {
 }
 
 #weblog-title a {
-	font-size: 3rem;
+	font-family: 'VC Honey Deck', serif;
+	font-weight: 700;
+	font-size: 4rem;
 	text-decoration: none;
 	border: none;
 	background-image: var(--gradient1);
@@ -255,6 +275,7 @@ header nav li a {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'VC Honey Deck', serif;
+	font-weight: 400;
 	margin: 1rem 0;
 	text-shadow: 6px 6px 0px #0000000c;
 }
@@ -327,12 +348,31 @@ main p {
 }
 
 .recent {
-	max-width: 550px;
+	width: 400px;
 	margin: auto;
   	padding: 0 1em 1em;
-	border: 0.5em solid var(--main-color);
+	border: 0.1em solid var(--main-color);
 	border-radius: var(--border-radius) var(--border-radius) 0 0;
 	border-bottom: 0;
+	transform: translate(0);
+	background-color: var(--background);
+}
+
+.gradient-bg {
+	max-width: fit-content;
+	margin: auto;
+	border-radius: var(--border-radius) var(--border-radius);
+	transform: translate(0);
+	background-color: var(--background);
+}
+.gradient-bg:before {
+  content:"";
+  position: absolute;
+  inset: 20px;
+  transform: translate(1px,1px);
+  z-index: -1;
+  background: var(--gradient1);
+  filter: blur(30px);
 }
 
 .recent-posts {
@@ -523,7 +563,10 @@ td, th {
 </head>
 <body>
 	<a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
-<header>
+	<div class="gradient-bg">
+
+	<header>
+
     <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
 	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
 	<h5 class="description">{weblog-description}</h5>
@@ -531,6 +574,8 @@ td, th {
 	{navigation}
 </nav>
 </header>
+</div>
+
 
 <main>
 
@@ -547,16 +592,16 @@ td, th {
 	</aside>
 </article>
 
-
-
 </main>
 
+<div class="gradient-bg">
 <div class="recent">
-	<h2>Recent Posts</h2>
+	<h1>Recent Posts</h1>
 	<div class="recent-posts">
 	{recent-posts}
 </div>
 	</div>
+</div>
 
 <footer class="footer-main">
 	<p>handmade with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></p>
