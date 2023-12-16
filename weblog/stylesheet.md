@@ -248,26 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 p, li {
 	line-height: 1.5em;
 }
-/*
-a:link { color: var(--purple); }
-a:visited { color: var(--purple); }
-a:hover { color: var(--foreground); }
-a:active { color: var(--foreground); }
 
-a {
-	background-image: var(--pink);
-	background-size: 100%;
-	height: 4em;
-	transition: all .3s ease-in-out;
-}
-
-a:hover {
-	background-size: 40%;
-	-webkit-background-clip: text;
-	background-clip: text;
-	opacity: 1;
-}
-*/
 /* -------------------------------------------------------------------------------------- [ LAYOUT ] */
 
 main {
@@ -351,7 +332,7 @@ article {
 }
 
 article h1 a, article h2 a, article h3 a {
-	color: var(--foreground) !important;
+	border-bottom: 1px solid var(--foreground-faded);
 }
 
 /* date ----------------------------------- [DATE] */
@@ -373,7 +354,7 @@ article h1 a, article h2 a, article h3 a {
 }
 
 .post-info a {
-	border-bottom: 1px solid var(--foreground);
+	border-bottom: 1px solid var(--foreground-faded);
 }
 
 
