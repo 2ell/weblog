@@ -3,7 +3,9 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+/* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
+	--transparent:#ffffff0e;
 	--foreground: #F8F8F2;
 	--foreground-faded: #f8f8f25b;
 	--background: #282A36;
@@ -22,7 +24,7 @@ Location: /style.css
   	--yellow: #f1fa8c;
 
 	--gradient1: linear-gradient(135deg, var(--yellow), var(--purple), var(--cyan));
-	--gradient2: linear-gradient(135deg, var(--cyan), var(--purple), var(--yellow));
+	--gradient2: linear-gradient(135deg, var(--cyan), var(--purple));
 
 	--border-radius: 0.7rem;
 }
@@ -42,6 +44,27 @@ body {
 	padding: 2em;
 	color: var(--foreground);
 	background: var(--background);
+}
+
+a {
+	text-decoration: underline;
+	color: var(--foreground);
+	background-image: var(--gradient2);
+	background-size: 0;
+	-webkit-background-clip: text;
+    	background-clip: text;
+	border-bottom: 0.2rem solid var(--transparent);	
+	transition: all 0.6s ease-in-out;
+	padding-bottom: 0;
+}
+
+a:hover {
+	background-size: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+    	background-clip: text;
+	border-bottom: 0.2rem solid var(--transparent);
+	transition: all 0.4s ease;
 }
 
 /* mobile -------------------------------------------------------------------------------------------- [ MOBILE ] */
@@ -95,12 +118,25 @@ body {
 
 #weblog-title a {
 	font-size: 3rem;
+	text-decoration: none;
+	border: none;
 	background-image: var(--gradient1);
-	color: transparent !important;
+	background-size: 0;
+	background-blend-mode: lighten;
+	color: var(--foreground);
+	padding-top: 1.5rem;
+	padding-bottom: 0;
+	transition: all 0.6s ease-in-out;
+}
+
+#weblog-title a:hover {
+	background-size: 100%;
+	color: transparent;
 	-webkit-background-clip: text;
     	background-clip: text;
-	padding-top: 1.5rem;
-	line-height: 3.5rem;
+	text-shadow: 
+	2px 2px 1px var(--transparent);
+	transition: all 0.6s ease-in-out;
 }
 
 .description {
@@ -159,8 +195,8 @@ header {
 	background: #44475a;
 	border-radius: var(--border-radius);
 	max-width: 600px;
-	margin: auto;
-	padding: 1em 1em;
+	margin: 2em auto 2em;
+	padding: 1em 2em 2em;
 	box-shadow: 
 		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
 		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
@@ -185,23 +221,19 @@ header nav {
 
 header nav ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	padding: 2rem;
 }
 
 header nav li {
-	display: inline-block;
+	display: inline-flex;
+	padding: 0 0.5rem 0;
 }
 
 header nav li a {
-	display: inline-block;
-	padding: 0.5rem;
+	display: inline-flex;
 	text-align: center;
 	text-decoration: none;
-}
-
-header nav li a:hover {
-	color: var(--foreground);
+	max-height: fit-content;
 }
 
 /* ----------------------------------------------------------------------------------------------- [ TYPE ] */
@@ -216,22 +248,26 @@ h1, h2, h3, h4, h5, h6 {
 p, li {
 	line-height: 1.5em;
 }
-
+/*
 a:link { color: var(--purple); }
 a:visited { color: var(--purple); }
 a:hover { color: var(--foreground); }
 a:active { color: var(--foreground); }
 
-main a, footer a {
-	text-decoration: none;
-	border-bottom: 1px dotted var(--purple-faint);
+a {
+	background-image: var(--pink);
+	background-size: 100%;
+	height: 4em;
+	transition: all .3s ease-in-out;
 }
 
 a:hover {
-  text-shadow: 2px 2px 3px var(--foreground-faded); /* Change to your desired shadow */
-  transition: text-shadow 0.3s ease;
+	background-size: 40%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	opacity: 1;
 }
-
+*/
 /* -------------------------------------------------------------------------------------- [ LAYOUT ] */
 
 main {
@@ -337,18 +373,7 @@ article h1 a, article h2 a, article h3 a {
 }
 
 .post-info a {
-	color: var(--foreground);
 	border-bottom: 1px solid var(--foreground);
-}
-
-.post-info:hover {
-	color: (--main-color) !important;
-}
-
-.post-info:hover a {
-	color: var(--main-color);
-	text-shadow: none;
-	border-bottom: 1px solid var(--main-color);
 }
 
 
