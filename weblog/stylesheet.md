@@ -6,6 +6,7 @@ Location: /style.css
 /* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
+	--transparent2: #ffffff07;
 	--foreground: #F8F8F2;
 	--foreground-faded: #f8f8f25b;
 	--background: #282A36;
@@ -28,6 +29,14 @@ Location: /style.css
 
 	--border-radius: 0.7rem;
 }
+
+* {
+    -webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 
 
 /* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
@@ -66,8 +75,8 @@ Location: /style.css
 
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.2em;
+	font-family: 'Mint Grotesk', sans-serif;
+	font-size: 1em;
 	margin: 0;
 	padding: 2em;
 	color: var(--foreground);
@@ -77,11 +86,11 @@ body {
 a {
 	text-decoration: underline;
 	color: var(--foreground);
-	background-image: var(--gradient2);
+	background-image: var(--gradient1);
 	background-size: 0;
 	-webkit-background-clip: text;
     	background-clip: text;
-	border-bottom: 0.2rem solid var(--transparent);	
+	border-bottom: 0.2rem solid var(--transparent2);	
 	transition: all 0.6s ease-in-out;
 	padding-bottom: 0;
 }
@@ -122,7 +131,9 @@ a:hover {
 }
 
 #weblog-title a {
-	font-size: 3rem;
+	font-family: 'VC Honey Deck', serif;
+	font-weight: 700;
+	font-size: 4rem;
 	text-decoration: none;
 	border: none;
 	background-image: var(--gradient1);
@@ -245,6 +256,7 @@ header nav li a {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'VC Honey Deck', serif;
+	font-weight: 400;
 	margin: 1rem 0;
 	text-shadow: 6px 6px 0px #0000000c;
 }
@@ -317,12 +329,31 @@ main p {
 }
 
 .recent {
-	max-width: 550px;
+	width: 400px;
 	margin: auto;
   	padding: 0 1em 1em;
-	border: 0.5em solid var(--main-color);
+	border: 0.1em solid var(--main-color);
 	border-radius: var(--border-radius) var(--border-radius) 0 0;
 	border-bottom: 0;
+	transform: translate(0);
+	background-color: var(--background);
+}
+
+.gradient-bg {
+	max-width: fit-content;
+	margin: auto;
+	border-radius: var(--border-radius) var(--border-radius);
+	transform: translate(0);
+	background-color: var(--background);
+}
+.gradient-bg:before {
+  content:"";
+  position: absolute;
+  inset: 20px;
+  transform: translate(1px,1px);
+  z-index: -1;
+  background: var(--gradient1);
+  filter: blur(30px);
 }
 
 .recent-posts {
