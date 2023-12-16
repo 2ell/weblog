@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-/* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--foreground: #F8F8F2;
 	--foreground-faded: #f8f8f25b;
@@ -153,13 +152,6 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
     background-clip: text;
 	z-index: 10;
 }
-/*
-.gradient {
-	background-image: var(--gradient1);
-	color: transparent !important;
-	-webkit-background-clip: text;
-    	background-clip: text;
-}
 
 /* ----------------------------------------------------------------------------------------- [ HEADER/NAV ] */
 
@@ -223,7 +215,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li {
 	line-height: 1.5em;
-	margin: 1rem 0 1rem;
 }
 
 a:link { color: var(--purple); }
@@ -253,7 +244,12 @@ main {
 	hyphens: auto;
 }
 
+main p {
+	margin: 1rem 0 1rem;
+}
+
 .card {
+	margin: 1rem;
 	padding: 1rem;
 	border-radius: var(--border-radius);
 	box-shadow: 
@@ -351,6 +347,7 @@ article h1 a, article h2 a, article h3 a {
 
 .post-info:hover a {
 	color: var(--main-color);
+	text-shadow: none;
 	border-bottom: 1px solid var(--main-color);
 }
 
