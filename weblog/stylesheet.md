@@ -30,6 +30,34 @@ Location: /style.css
 }
 
 
+/* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
+
+.centre {
+	text-align: center !important;
+}
+
+.no-btm {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.no-line {
+	text-decoration: none !important;
+}
+
+.spacing {
+	min-height: 2em;
+	margin-bottom: 2em;
+}
+
+.post-spacing {
+	color: transparent;
+	background-image: none;
+	border: 0;
+	margin-bottom: 2em;
+}
+
+
 /* body -------------------------------------------------------------------------------------------- [ BODY ] */
 
 * {
@@ -85,29 +113,6 @@ a:hover {
   }
 }
 
-
-/* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
-
-.centre {
-	text-align: center !important;
-}
-
-.no-btm {
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-.spacing {
-	min-height: 2em;
-	margin-bottom: 2em;
-}
-
-.post-spacing {
-	color: transparent;
-	background-image: none;
-	border: 0;
-	margin-bottom: 2em;
-}
 
 /* titles -------------------------------------------------------------------------------------------- [ TITLES ] */
 
@@ -347,7 +352,7 @@ article h1 a, article h2 a, article h3 a {
 	max-width: fit-content;
 	float: right;
 	text-shadow: 6px 6px 0px #0000000c;
-	font-size: 0.9em;
+	font-size: 1rem;
 	border-radius: 0.7rem  0rem 0rem 0.7rem;
 	color: var(--foreground);
 	text-align: right;
@@ -360,7 +365,8 @@ article h1 a, article h2 a, article h3 a {
 
 /* date svg ----------------------------------- [DATE SVG] */
 .post-info i {
-	padding-right: 0.1rem;
+	font-size: 1rem;
+	padding-right: 0.3rem;
 }
 
 /* tags ----------------------------------- [TAGS] */
@@ -368,29 +374,36 @@ article h1 a, article h2 a, article h3 a {
 .post-tags {
 	margin-top: 1.5rem;
 	text-align: left;
+	text-decoration: none;
+}
+
+.post-tags i {
+	font-size: 1rem;
+	padding-left: 0.1rem;
 }
 
 .post-info i:nth-child(2) {
 	padding-left: 1em;
 }
 
+.tag::before {
+	content: "#";
+}
+
 .tag {
-	font-size: 0.8rem;
-    background-color: var(--purple);
+	font-size: 1rem;
+	border-radius: var(--border-radius);
+	display: inline-block;		
+	border: 0.2rem solid var(--transparent);
 	padding: 0.3rem;
-	margin: .8em 0 0 .4em;
-	border-radius: 0.7rem;
-	display: inline-block;
 }
 
 .tag a {
-	border-bottom: none !important;
-	text-decoration: none !important;
-	color: var(--foreground);
+	color: var(--foreground);	
 }
 
 .tag:hover {
-	background-image: var(--gradient2);
+	border: 0.2rem solid transparent;
 }
 
 
