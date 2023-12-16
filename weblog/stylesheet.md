@@ -271,8 +271,8 @@ main p {
 }
 
 .card {
-	margin: 1rem 2rem;
-	padding: 1rem;
+	margin: 2rem 1rem;
+	padding: 2rem;
 	border-radius: var(--border-radius);
 	box-shadow: 
 		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
@@ -332,8 +332,7 @@ main p {
 /* ------------------------------------------------------------------------------------------- [POST] */
 
 article {
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+	margin: 2rem;
 }
 
 article h1 a, article h2 a, article h3 a {
