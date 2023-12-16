@@ -107,6 +107,10 @@ a:hover {
 	padding-bottom: 0;
 }
 
+.no-line {
+	text-decoration: none !important;
+}
+
 .spacing {
 	min-height: 2em;
 	margin-bottom: 2em;
@@ -509,7 +513,7 @@ td, th {
 
 </head>
 <body>
-
+	<a href="https://laurel.weblog.lol/xml.rss"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
 <header>
     <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
 	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
@@ -530,7 +534,7 @@ td, th {
 <article>
 	{body}
 	<aside class="post-tags">
-		{tags}
+		<i class="fa-solid fa-tag"></i> {tags}
 	</aside>
 </article>
 
