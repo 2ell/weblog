@@ -25,7 +25,9 @@ Title: Landing Page Template
         <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
 <h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
 		<h5 class="description">{weblog-description}</h5>
-	{navigation}
+<nav>
+{navigation}
+</nav>
 </header>
 
 <main>
@@ -39,7 +41,7 @@ Title: Landing Page Template
 
 </main>
 
-<footer>
+<footer class="footer-main">
 	<p>handmade with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></p>
 	<p>powered by <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a>'s super nifty <a href="https://weblog.lol">weblog</a> service </p>
 	</footer>

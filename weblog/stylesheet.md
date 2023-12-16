@@ -3,8 +3,10 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+/* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--foreground: #F8F8F2;
+	--foreground-faded: #f8f8f25b;
 	--background: #282A36;
 	--link: #9580ff;
 	--accent: #BD93F9;
@@ -16,33 +18,61 @@ Location: /style.css
   	--orange: #ffb86c;
   	--pink: #ff79c6;
   	--purple: #bd93f9;
-	  --purple-faint: #ac9cc2;
+	  --purple-faint: #ccb9e6;
   	--red: #ff5555;
   	--yellow: #f1fa8c;
 
 	--gradient1: linear-gradient(135deg, var(--yellow), var(--purple), var(--cyan));
 	--gradient2: linear-gradient(135deg, var(--cyan), var(--purple), var(--yellow));
+
+	--border-radius: 0.7rem;
 }
 
 
-/* -------------------------------------------------------------------------------------------- [ BODY ] */
+/* body -------------------------------------------------------------------------------------------- [ BODY ] */
 
 * {
 	margin: auto;
 }
 
+
 body {
 	font-family: 'Lato', sans-serif;
-	font-size: 1em;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 2em;
 	color: var(--foreground);
 	background: var(--background);
 }
 
+/* mobile -------------------------------------------------------------------------------------------- [ MOBILE ] */
 
-/* -------------------------------------------------------------------------------------- [ OVERRIDES ] */
+@media (max-width: 500px) {
+	body {
+		font-size: 1em;
+		padding: 1em;
+	}
+	main {
+		padding: 1.5em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  header {
+	width: 80%;
+  }
+}
+
+
+/* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
 
 .centre {
 	text-align: center !important;
+}
+
+.no-btm {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .spacing {
@@ -57,7 +87,7 @@ body {
 	margin-bottom: 2em;
 }
 
-/* -------------------------------------------------------------------------------------------- [ TITLES ] */
+/* titles -------------------------------------------------------------------------------------------- [ TITLES ] */
 
 #weblog-title {
 	text-align: center;
@@ -81,12 +111,12 @@ body {
 	margin-top: -0.1rem;
 }
 
-/* ------------------------------------------------------------------------------------------- [HR STYLES] */
+/* hr/dividers ------------------------------------------------------------------------------------------- [HR STYLES] */
 
 hr {
 	margin-top: 1em;
 	background-image: var(--gradient1);
-	height: 0.09rem;
+	height: 0.05rem;
 	border: 0;
 	max-width: 100%;
 }
@@ -99,22 +129,20 @@ hr {
 	max-width: 100%;
 }
 
-.recent {
-	max-width: 600px;
-	margin: auto;
-	padding: 1.5em;
-}
-
 
 /* -------------------------------------------------------------------------------------------- [ EFFECTS ] */
 
 .shadow {
 	text-shadow: 6px 6px 0px #000000;
-	z-index: 1;
 }
 
 .b-shadow {
-	box-shadow: 6px 6px 6px 6px #0000000c;
+	box-shadow: 
+		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
+		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
+		rgba(0, 0, 0, 0.1) 0px 4px 6px, 
+		rgba(0, 0, 0, 0.1) 0px 12px 13px, 
+		rgba(0, 0, 0, 0.03) 0px -3px 5px;
 }
 
 .gradient-yb {
@@ -137,28 +165,26 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 
 header {	
 	background: #44475a;
-	border-radius: 0.7em;
+	border-radius: var(--border-radius);
 	max-width: 600px;
 	margin: auto;
-	margin-top: 2em;
 	padding: 1em 1em;
-	box-shadow: 6px 6px 6px 6px #0000000c;
+	box-shadow: 
+		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
+		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
+		rgba(0, 0, 0, 0.1) 0px 4px 6px, 
+		rgba(0, 0, 0, 0.1) 0px 12px 13px, 
+		rgba(0, 0, 0, 0.03) 0px -3px 5px;
 }
 
 .header-img {
-  border-radius: 0.7em;
+  border-radius: var(--border-radius);
   opacity: 0.7;
+  margin: auto !important;
   filter: saturate(4) !important;
   background-blend-mode: multiply;
   display: block;
-  margin: auto !important;
-  padding-bottom: 1em;
-}
-
-@media screen and (max-width: 600px) {
-  header {
-	width: 65%;
-  }
+  padding: 1rem;
 }
 
 header nav {
@@ -167,7 +193,7 @@ header nav {
 
 header nav ul {
 	list-style-type: none;
-	margin: 0;
+	margin: 0 0 2em;
 	padding: 0;
 }
 
@@ -177,15 +203,13 @@ header nav li {
 
 header nav li a {
 	display: inline-block;
-	padding: 0.4rem;
+	padding: 0.5rem;
 	text-align: center;
 	text-decoration: none;
-	border-bottom: 0;
 }
 
 header nav li a:hover {
 	color: var(--foreground);
-	text-shadow: 6px 6px 0px #0000000c;
 }
 
 /* ----------------------------------------------------------------------------------------------- [ TYPE ] */
@@ -198,33 +222,46 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p, li {
-	max-width: 60cw;
-	line-height: 2em;
+	line-height: 1.5em;
+	margin: 1rem 0 1rem;
 }
 
 a:link { color: var(--purple); }
 a:visited { color: var(--purple); }
-a:hover { color: var(--pink); }
-a:active { color: var(--pink); }
+a:hover { color: var(--foreground); }
+a:active { color: var(--foreground); }
 
 main a, footer a {
 	text-decoration: none;
 	border-bottom: 1px dotted var(--purple-faint);
 }
 
+a:hover {
+  text-shadow: 2px 2px 3px var(--foreground-faded); /* Change to your desired shadow */
+  transition: text-shadow 0.3s ease;
+}
+
 /* -------------------------------------------------------------------------------------- [ LAYOUT ] */
 
 main {
-	max-width: 600px;
+	max-width: 800px;
+	margin: auto;
 	margin-top: 0.5em;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding: 1em 1em 1em 1em;
+	font-size: 1em;
+	word-break: normal;
+	hyphens: auto;
 }
 
 .card {
 	padding: 1rem;
-	border-radius: 0.7rem;
-	box-shadow: 2px 2px 2px 2px #0000002c;
+	border-radius: var(--border-radius);
+	box-shadow: 
+		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
+		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
+		rgba(0, 0, 0, 0.1) 0px 4px 6px, 
+		rgba(0, 0, 0, 0.1) 0px 12px 13px, 
+		rgba(0, 0, 0, 0.03) 0px -3px 5px;
 }
 
 .img-box {
@@ -234,31 +271,58 @@ main {
 
 .img-box img {
   padding: 0 !important;
-  border-radius: 0.7em;
+  border-radius: var(--border-radius);
   opacity: 0.7;
   filter: saturate(2);
   background-blend-mode: multiply;
 }
 
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin: 0.5rem;
+}
+
+.image-grid img {
+  width: 260px; /* Adjust the width as needed */
+  height: auto;
+  margin: 1rem;
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
 .img-card {
-	border-radius: 40%;
+	border-radius: var(--border-radius);
 	max-height: 250px;
 	max-width: 250px;
+}
+
+.recent {
+	max-width: 550px;
+	margin: auto;
+  	padding: 0 1em 1em;
+	border: 0.5em solid var(--main-color);
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+	border-bottom: 0;
+}
+
+.recent-posts {
+	margin: 1rem 1rem 3rem;
 }
 
 /* ------------------------------------------------------------------------------------------- [POST] */
 
 article {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
 
-article h1 a, article h2 a {
+article h1 a, article h2 a, article h3 a {
 	color: var(--foreground) !important;
 }
 
-/* ----------------------------------- [DATE]
-*/
+/* date ----------------------------------- [DATE] */
 
 .post-info-container {
 	padding-bottom: 2rem;
@@ -266,8 +330,6 @@ article h1 a, article h2 a {
 
 .post-info {
     text-decoration: none !important;
-	margin-top: 0em;
-	margin-right: -1rem;
 	padding: 0.5rem;
 	max-width: fit-content;
 	float: right;
@@ -283,20 +345,22 @@ article h1 a, article h2 a {
 	border-bottom: 1px solid var(--foreground);
 }
 
+.post-info:hover {
+	color: (--main-color) !important;
+}
+
 .post-info:hover a {
 	color: var(--main-color);
 	border-bottom: 1px solid var(--main-color);
 }
 
 
-/* ----------------------------------- [DATE SVG]
-*/
+/* date svg ----------------------------------- [DATE SVG] */
 .post-info i {
 	padding-right: 0.1rem;
 }
 
-/* ----------------------------------- [TAGS]
-*/
+/* tags ----------------------------------- [TAGS] */
 
 .post-tags {
 	margin-top: 1.5rem;
@@ -331,14 +395,12 @@ article h1 a, article h2 a {
 	max-width: 50%;
 }
 
-/* ----------------------------------- [MARKDOWN]
-*/
+/* markdown ----------------------------------- [MARKDOWN] */
 
 blockquote {
 	line-height: 1em;
+	margin: 1rem;
 	margin-left: 0.3rem;
-	margin-top: 0;
-	margin-bottom: 1rem;
 	padding: 1rem;
 }
 
@@ -360,12 +422,13 @@ blockquote p:before {
 }
 
 blockquote .footer {
-	padding-top: 0.5rem;
+	text-align: right;
+	padding: 1rem 0 0;
 }
 
 blockquote .footer:before {
 	content: '—';
-	padding-right: 0.5rem;
+	padding: 0.5rem;
 }
 
 code {
@@ -405,29 +468,26 @@ td, th {
 
 /* -------------------------------------------------------------------------------------- [ FOOTER ] */
 
-footer {
+.footer-main {
 	position: relative;
-	left: 0;
-	bottom: 0;
+	left: 0 !important;
+	bottom: 0 !important;
 	width: 100%;
-	margin-top: 1em;
+	margin: 0;
 	background-color: var(--main-color) !important;
 	color: var(--foreground) !important;
-	padding-top: 2em;
-	padding-bottom: 1em;
-	box-shadow: 6px 6px 6px 6px #0000000c;
+	padding: 1em 0 1.5em 0;
+	box-shadow: 
+		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
+		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
+		rgba(0, 0, 0, 0.1) 0px 4px 6px, 
+		rgba(0, 0, 0, 0.1) 0px 12px 13px, 
+		rgba(0, 0, 0, 0.03) 0px -3px 5px;
 }
 
-footer p {
-	font-size: 0.9em;
+.footer-main p {
+	font-size: 0.9rem;
 	font-family: 'VC Honey Deck', serif;
 	color: var(--foreground);
 	text-align: center;
-}
-
-#footer a {
-    text-decoration: none !important;
-	text-transform: lowercase;
-	color: var(--foreground) !important;
-	font-family: 'VC Honey Deck', serif;
 }
