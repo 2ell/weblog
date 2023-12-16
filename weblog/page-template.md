@@ -20,14 +20,16 @@ Title: Page Template
 </head>
 <body>
 
-<header>
-     <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
-<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
-		<h5 class="description">{weblog-description}</h5>
-<nav>
-{navigation}
+<div class="gradient-bg">
+	<header>
+    <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
+	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
+	<h5 class="description">{weblog-description}</h5>
+	<nav>
+	{navigation}
 </nav>
 </header>
+</div>
 
 <main>
 
