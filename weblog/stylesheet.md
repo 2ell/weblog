@@ -266,7 +266,7 @@ main p {
 }
 
 .card {
-	margin: 1rem;
+	margin: 1rem 2rem;
 	padding: 1rem;
 	border-radius: var(--border-radius);
 	box-shadow: 
@@ -377,7 +377,6 @@ article h1 a, article h2 a, article h3 a {
 .tag {
 	font-size: 0.8rem;
     background-color: var(--purple);
-	color: var(--background) !important;
 	padding: 0.3rem;
 	margin: .8em 0 0 .4em;
 	border-radius: 0.7rem;
@@ -387,6 +386,7 @@ article h1 a, article h2 a, article h3 a {
 .tag a {
 	border-bottom: none !important;
 	text-decoration: none !important;
+	color: var(--foreground);
 }
 
 .tag:hover {
