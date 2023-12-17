@@ -18,10 +18,9 @@ Title: Landing Page Template
 </style>
 
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
-
 <div class="top">
 	<div class="left">
-		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg</h2>
+		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg {seperator} <span clas="page-title">{post-title}</span></h2>
 		</div>
 	<div class="right">
 	</div>
@@ -39,17 +38,12 @@ Title: Landing Page Template
 		<div class="right">	
 		</div>
 </div>	
-
-</head>	
-
-<body>
-
 		<nav>
 			<ul>
-				<li><a href="/">about</a></li>
-				<li><a href="/">index</a></li>
-				<li><a href="/">colophon</a></li>
-				<li><a href="/">linkroll</a></li>
+				<li><a href="/about">about</a></li>
+				<li><a href="/index">index</a></li>
+				<li><a href="/colophon">colophon</a></li>
+				<li><a href="/linkroll">linkroll</a></li>
 
 				<li><a href="https://laurel.weblog.lol/xml.rss">rss</a></li>
 	</div>
@@ -58,16 +52,17 @@ Title: Landing Page Template
 
 	<header>
 	<div class="gradient-bg">
-
+<div class="header-container">
 		<div class="gradient-bg-circle">
 			<img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
 			</div>
 	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
 	<h5 class="description">{weblog-description}</h5>
 	<hr class="divider"></hr>
+</div>
 </header>
 </div>
-
+</head>	
 
 <main>
 

@@ -33,7 +33,7 @@
     --green: rgb(166, 218, 149);
 	--yellow: rgb(238, 212, 159);
     --peach: rgb(245, 169, 127);
-    --maroon:  	rgb(238, 153, 160);
+    --maroon:rgb(238, 153, 160);
 	--red: rgb(237, 135, 150);
 	--mauve: rgb(198, 160, 246);
 	--pink: rgb(245, 189, 230);
@@ -45,6 +45,7 @@
 
 	--gradient1: linear-gradient(60deg, var(--lavendar), var(--teal), var(--rosewater), var(--sky), var(--pink));
 	--gradient2: linear-gradient(120deg, var(--lavendar), var(--teal), var(--yellow), var(--pink));
+	--gradient3: linear-gradient(120deg, var(--blue), var(--sky), var(--teal));
 	--default-font: 'Lato', sans-serif;
 	--header-font: 'VC Honey Deck', serif;
 
@@ -80,7 +81,6 @@ p, li {
 	line-height: 1.5em;
 }
 
-body a,
 main a, 
 footer a {
 	color: var(--subtext0);
@@ -93,7 +93,6 @@ footer a {
 	padding-bottom: 0;
 }
 
-body a:hover,
 main a:hover,
 footer a:hover {
 	background-size: 100%;
@@ -109,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	margin: 1rem 0;
 }
+
 #weblog-title {
 	max-width: 100%;
 }
@@ -130,22 +130,48 @@ hr {
 	max-width: 100%;
 }
 
-/* ------------------------------------------- [TOP]*/
+/* --------------------------------------------------------------------- [TOP]*/
+
+.top a, 
+.top-nav a,
+nav a,
+header a {
+	color: var(--subtext0);
+	background-image: var(--gradient3);
+	background-size: 0;
+	-webkit-background-clip: text;
+    	background-clip: text;
+	border-bottom: 0.2rem solid transparent;	
+	transition: all 0.2s ease-in-out;
+	padding-bottom: 0;
+}
+
+.top a:hover,
+.top-nav a:hover,
+nav a:hover {
+	background-size: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+    	background-clip: text;
+	transition: all 0.2s ease;
+}
+
+/* [titlebar] */
 
 .top {
 	position: sticky;
 	top: 0;
 	left: 0;
-	height: 4rem;
+	height: 3rem;
 	background-color: var(--crust);
-	border-bottom: 1px solid var(--overlay0);
 	width: 100%;
-	z-index: 1000;
 	text-decoration: none !important;
 }
 
 .top-title {
-	padding: 0.5rem;
+	margin-top: 0;
+	padding-top: 0;
+	padding: 1rem;
 }
 
 .top-title a {
@@ -154,33 +180,32 @@ hr {
 
 .top .right {
 	padding: 0.3rem;
-	display: inline-flex;
+	display: block;
 	float: right;
 }
 
 .top .left {
-	display: inline-flex;
+	display: block;
 	float: left;
 }
 
+/* [top navigation bar] */
 .top-nav {
 	position: sticky;
-	top: 4rem;
+	top: 3rem;
 	left: 0rem;
 	width: 100%;
 	height: 1.6rem;
 	background-color: var(--crust);
-	border-bottom: 1px solid var(--overlay0);
+	border: 1px solid var(--overlay0);
+	border-left: 0;
+	border-right: 0;
 	z-index: 999;
-}
-
-.top-nav i {
-	padding-right: 0.3rem;
 }
 
 .top-nav ul {
 	list-style-type: none;
-	padding: 1rem, 0;
+	padding: 0;
 }
 
 .top-nav li {
@@ -190,7 +215,9 @@ hr {
 }
 
 .top-nav .left {
-	margin-left: -3rem;
+	position: absolute;
+	left: 0;
+	display: block;
 	float: left;
 	text-align: center;
 }
@@ -205,9 +232,8 @@ hr {
 }
 
 .top-nav .right {
-	padding: 0rem;
-	padding-right: 1rem;
-	float: right;	
+	float: right;
+	display: block;	
 	text-align: center;
 }
 
@@ -219,10 +245,12 @@ hr {
 	text-decoration: none;
 }
 
+/* [weblog navigation bar] */
 nav {
+	font-size: 1.2em;
 	text-align: center;
-	background-color: var(--mantle);
-	border-bottom: 1px solid var(--overlay0);
+	background-color: var(--yellow);
+	border-bottom: 1px solid var(--text-normal);
 }
 
 nav ul {
@@ -231,12 +259,13 @@ nav ul {
 }
 
 nav li {
-	display: inline-flex;
+	display: inline-block;
 	padding: 0 0.5rem 0;
 }
 
 nav li a {
-	display: inline-flex;
+	color: var(--mantle);
+	display: block
 	text-align: center;
 	text-decoration: none;
 	border-bottom: 0.2rem solid transparent;
@@ -245,12 +274,17 @@ nav li a {
 
 header {
 	display: block;
-	max-width: 800px;
+	max-width: 100%;
 	background: var(--mantle);
-	border-radius: var(--border-radius);
 	margin: 2em auto 2em;
 	padding: 4em 3em 4em;
 	z-index: 10;
+}
+
+.header-container {
+	max-width: 80%;
+	margin: auto;
+	text-align: center;
 }
 
 /* ------------------------------------------- [MAIN]*/
@@ -269,6 +303,19 @@ main p {
 	margin: 1rem 0 1rem;
 }
 
+main img {
+	max-width: 70%;
+	margin: auto;
+	border: 1px solid var(--lavendar);
+	box-shadow: 
+		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
+		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
+		rgba(0, 0, 0, 0.1) 0px 4px 6px, 
+		rgba(0, 0, 0, 0.1) 0px 12px 13px, 
+		rgba(0, 0, 0, 0.03) 0px -3px 5px;
+	}
+
+
 .article-container {
 	margin: .5rem .5rem 3rem;
 }
@@ -282,10 +329,10 @@ main p {
 }
 
 .recent {
-	max-width: 550px;
+	max-width: 100%;
 	margin: auto;
   	padding: 1em 1em 1em;
-	background-color: var(--surface2);
+	background-color: var(--surface0);
 	border: 1px solid  1px solid var(--base);
 	border-bottom: 0;
 }
@@ -310,7 +357,7 @@ main p {
 
 <div class="top">
 	<div class="left">
-		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg</h2>
+		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg {seperator} <span clas="page-title">{weblog-title}</span></h2>
 		</div>
 	<div class="right">
 	</div>
@@ -328,17 +375,12 @@ main p {
 		<div class="right">	
 		</div>
 </div>	
-
-</head>	
-
-<body>
-
 		<nav>
 			<ul>
-				<li><a href="/">about</a></li>
-				<li><a href="/">index</a></li>
-				<li><a href="/">colophon</a></li>
-				<li><a href="/">linkroll</a></li>
+				<li><a href="/about">about</a></li>
+				<li><a href="/index">index</a></li>
+				<li><a href="/colophon">colophon</a></li>
+				<li><a href="/linkroll">linkroll</a></li>
 
 				<li><a href="https://laurel.weblog.lol/xml.rss">rss</a></li>
 	</div>
@@ -347,18 +389,19 @@ main p {
 
 	<header>
 	<div class="gradient-bg">
-
-
-
+<div class="header-container">
 		<div class="gradient-bg-circle">
 			<img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
 			</div>
 	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
 	<h5 class="description">{weblog-description}</h5>
 	<hr class="divider"></hr>
+</div>
 </header>
 </div>
+</head>	
 
+<body>
 
 <main>
 	<div class="article-container">
