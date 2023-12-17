@@ -88,15 +88,15 @@ Location: /style.css
 }
 
 .spacing {
-	min-height: 2em;
-	margin-bottom: 2em;
+	min-height: 1em;
+	margin-bottom: 1em;
 }
 
 .post-spacing {
 	color: transparent;
 	background-image: none;
 	border: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 
@@ -332,7 +332,7 @@ main p {
 
 .card {
 	margin: 2rem 1rem;
-	padding: 1.5rem;
+	padding: 1rem;
 	border-radius: var(--border-radius);
 	background-color: var(--main-color);
 	z-index: 991;
