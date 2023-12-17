@@ -51,7 +51,7 @@ Title: Page Template
 		</nav>
 
 	<header>
-	<div class="gradient-bg">
+
 <div class="header-container">
 		<div class="gradient-bg-circle">
 			<img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
@@ -59,7 +59,6 @@ Title: Page Template
 	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
 	<h5 class="description">{weblog-description}</h5>
 	<hr class="divider"></hr>
-</div>
 </header>
 </div>
 </head>	
