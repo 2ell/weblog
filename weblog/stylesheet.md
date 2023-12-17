@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+/* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
 	--transparent2: #ffffff07;
@@ -32,7 +33,6 @@ Location: /style.css
 
 * {
     -webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
@@ -399,11 +399,29 @@ main p {
   content:"";
   position: absolute;
   inset: 10px;
-  transform: translate(0.5em, 0.5em);
+  transform: translate(0.3em, 0.3em);
   z-index: -4;
   background: var(--gradient1);
   background-blend-mode: lighten;
   filter: blur(1.4em);
+}
+
+.gradient-bg-circle {
+	max-width: fit-content;
+	margin: auto;
+	border-radius: 20em;
+	transform: translate(0);
+	background-color: transparent;
+}
+.gradient-bg-circle:before {
+  content:"";
+  position: absolute;
+  inset: 40px;
+  transform: translate(0.1em, 0.1em);
+  z-index: -4;
+  background: var(--gradient1);
+  background-blend-mode: lighten;
+  filter: blur(2em);
 }
 
 .recent-posts {

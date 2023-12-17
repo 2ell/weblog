@@ -18,14 +18,23 @@ Title: Page Template
 </style>
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 <div class="top-nav">
-	<a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
+	<div class="rss"><a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
 	</div>
-</head>
+		<div class="links">{navigation}	</div>
+</div>	
+
+</head>	
+
 <body>
-	
-<div class="gradient-bg">
+
+
+	<div class="gradient-bg">
+
 	<header>
-    <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
+
+		<div class="gradient-bg-circle">
+			<img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
+			</div>
 	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
 	<h5 class="description">{weblog-description}</h5>
 	<nav>
