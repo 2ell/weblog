@@ -3,8 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
-/* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
 	--transparent2: #ffffff07;
@@ -43,14 +41,36 @@ Location: /style.css
 	position: sticky;
 	top: 0;
 	left: 0;
+	height: 3em;
 	background-color: var(--background);
 	font-size: 0.9rem !important;
-	padding: 1rem;
 	z-index: 999;
-	margin: 0 0 3em 0em;
+	width: 100%;
 }
 
+.top-nav .rss {
+	padding: 1rem;
+	float: left;
+	display: flex;
+}
 
+.top-nav .links {
+	padding: 1rem;
+	float: right;
+	display: flex;
+}
+	.top-nav .links ul {
+	list-style-type: none;
+}
+	.top-nav .links li {
+	display: inline-flex;
+	padding: 0 0.3rem 0;
+}
+	.top-nav .links li a {
+	display: inline-flex;
+	text-align: center;
+	text-decoration: none;
+}
 
 /* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
 
@@ -91,7 +111,6 @@ body {
 	font-family: 'Mint Grotesk', sans-serif;
 	font-size: 1em;
 	margin: 0 auto;
-	padding: 2em;
 	color: var(--foreground);
 	background: var(--background);
 }
@@ -133,12 +152,26 @@ a:hover {
 	main .card {
 	padding: 1rem;
 	}
+	header nav {
+		display: none;
+	}
+	.top-nav .links {
+		display: inline-block;
+	}
+	.top-nav .links ul {
+	list-style-type: none;
+	padding: 2rem;
 }
-
-@media screen and (max-width: 1020px) {
-  header {
-	width: 80%;
-  }
+	.top-nav .links li {
+	display: inline-flex;
+	padding: 0 0.2rem 0;
+}
+	.top-nav .links li a {
+	display: inline-flex;
+	text-align: center;
+	text-decoration: none;
+	max-height: fit-content;
+}
 }
 
 
@@ -228,11 +261,11 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 
 header {
 	display: block;
-	max-width: 30em;	
+	max-width: 25em;	
 	background: #44475a;
 	border-radius: var(--border-radius);
 	margin: 2em auto 2em;
-	padding: 1em 2em 2em;
+	padding: 2em 3em 3em;
 	z-index: 10;
 }
 
