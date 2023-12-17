@@ -24,7 +24,7 @@ Title: Page Template
 	<div class="right">
 		<i class="fa-solid fa-bars"></i>
 	</div>
-
+</div>
 
 
 <div class="top-nav">
