@@ -2,29 +2,29 @@ Type: File
 Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
-
 /* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
 	--transparent2: #ffffff07;
-	--foreground: #F8F8F2;
 	--foreground-faded: #f8f8f25b;
-	--background: #282A36;
-	--link: #9580ff;
-	--accent: #BD93F9;
-	--background-color: #282a36;
-  	--main-color: #44475a;
-  	--comment: #6272a4;
-  	--cyan: #8be9fd;
-  	--green: #50fa7b;
-  	--orange: #ffb86c;
-  	--pink: #ff79c6;
-  	--purple: #bd93f9;
-	  --purple-faint: #ccb9e6;
-  	--red: #ff5555;
-  	--yellow: #f1fa8c;
+	--background: oklch(28.82% 0.022 277.51);
+    --main-color: oklch(40.28% 0.032 277.83);
+    --faint: oklch(52.79% 0.024 279.54);
+    --foreground: oklch(97.75% 0.008 106.55);
+    --comment: oklch(55.98% 0.08 270.09);
+    --cyan: oklch(88.26% 0.093 212.85);
+	--cyan2: oklch(63.2% 0.93 212.85);
+    --green: oklch(87.1% 0.22 148.02);
+    --orange: oklch(83.39% 0.124 66.56);
+    --pink: oklch(75.46% 0.183 346.81);
+    --purple: oklch(74.2% 0.09 301.88);
+	--purple2: oklch(63.2% 0.149 301.88);
+    --red: oklch(68.22% 0.206 24.43);
+    --yellow: oklch(95.53% 0.134 112.76);
+	--yellow2: oklch(63.2% 0.03 112.76);
 
-	--gradient1: linear-gradient(135deg, var(--yellow), var(--purple), var(--cyan));
+	--gradient: linear-gradient(160deg, var(--background), var(--yellow2), var(--background), var(--yellow2), var(--background), var(--purple), var(--background), var(--purple), var(--background), var(--cyan), var(--background), var(--cyan));
+	--gradient1: linear-gradient(145deg, var(--yellow), var(--purple), var(--cyan));
 	--gradient2: linear-gradient(135deg, var(--cyan), var(--purple));
 
 	--border-radius: 0.7rem;
@@ -77,14 +77,14 @@ Location: /style.css
 body {
 	font-family: 'Mint Grotesk', sans-serif;
 	font-size: 1em;
-	margin: 0;
+	margin: 0 auto;
 	padding: 2em;
 	color: var(--foreground);
 	background: var(--background);
 }
 
 a {
-	text-decoration: underline;
+	text-decoration: dotted var(--transparent);
 	color: var(--foreground);
 	background-image: var(--gradient1);
 	background-size: 0;
@@ -108,15 +108,15 @@ a:hover {
 
 @media (max-width: 500px) {
 	body {
-		font-size: 1em;
-		padding: 1em;
+		font-size: 0.8em;
+		padding: 0em;
 	}
 	main {
-		padding: 1.5em;
+		padding: 1em;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1020px) {
   header {
 	width: 80%;
   }
@@ -207,18 +207,14 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 
 /* ----------------------------------------------------------------------------------------- [ HEADER/NAV ] */
 
-header {	
+header {
+	display: block;
+	max-width: 30em;	
 	background: #44475a;
 	border-radius: var(--border-radius);
-	max-width: 600px;
 	margin: 2em auto 2em;
 	padding: 1em 2em 2em;
-	box-shadow: 
-		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
-		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
-		rgba(0, 0, 0, 0.1) 0px 4px 6px, 
-		rgba(0, 0, 0, 0.1) 0px 12px 13px, 
-		rgba(0, 0, 0, 0.03) 0px -3px 5px;
+	box-shadow: ;
 }
 
 .header-img {
@@ -272,7 +268,7 @@ main {
 	max-width: 800px;
 	margin: auto;
 	margin-top: 0.5em;
-	padding: 1em 1em 1em 1em;
+	padding: .5em .5em .5em .5em;
 	font-size: 1em;
 	word-break: normal;
 	hyphens: auto;
@@ -329,10 +325,10 @@ main p {
 }
 
 .recent {
-	width: 400px;
+	width: 300px;
 	margin: auto;
   	padding: 0 1em 1em;
-	border: 0.1em solid var(--main-color);
+	border: 0.1em solid var(--background);
 	border-radius: var(--border-radius) var(--border-radius) 0 0;
 	border-bottom: 0;
 	transform: translate(0);
@@ -349,11 +345,11 @@ main p {
 .gradient-bg:before {
   content:"";
   position: absolute;
-  inset: 20px;
-  transform: translate(1px,1px);
+  inset: 10px;
+  transform: translate(10px, 10px, 10px, 15px);
   z-index: -1;
   background: var(--gradient1);
-  filter: blur(30px);
+  filter: blur(2em);
 }
 
 .recent-posts {
@@ -367,7 +363,7 @@ article {
 }
 
 article h1 a, article h2 a, article h3 a {
-	border-bottom: 1px solid var(--foreground-faded);
+	border-bottom: 0.3rem solid var(--foreground-faded);
 }
 
 /* date ----------------------------------- [DATE] */
@@ -382,7 +378,7 @@ article h1 a, article h2 a, article h3 a {
 	max-width: fit-content;
 	float: right;
 	text-shadow: 6px 6px 0px #0000000c;
-	font-size: 1rem;
+	font-size: 1em;
 	border-radius: 0.7rem  0rem 0rem 0.7rem;
 	color: var(--foreground);
 	text-align: right;
@@ -518,7 +514,6 @@ td, th {
 	position: relative;
 	left: 0 !important;
 	bottom: 0 !important;
-	width: 100%;
 	margin: 0;
 	background-color: var(--main-color) !important;
 	color: var(--foreground) !important;
