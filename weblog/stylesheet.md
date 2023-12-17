@@ -379,7 +379,7 @@ main p {
 }
 
 .recent {
-	width: 300px;
+	width: 550px;
 	margin: auto;
   	padding: 0 1em 1em;
 	border: 0.1em solid var(--background);
