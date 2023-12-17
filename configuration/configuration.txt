@@ -17,7 +17,7 @@ Landing page template: Landing Page Template
 Separator:  · 
 Navigation: <a href="/about">about</a>, <a href="/linkroll">linkroll</a>, <a href="/colophon">colophon</a>, <a href="/archive">archive</a>
 Files path: /files/
-Landing page post count: 3
+Landing page post count: 2
 Post template: Post Template
 
 
@@ -59,7 +59,7 @@ Date: $date
 This is a new blog post. You can author it in _Markdown_, which is **awesome**.
 ]>>
 
-Titleless title length: 10 words
+Titleless title length: 20 characters
 Truncation appendix: ...
 Title format: <h1><a href="$permalink">$title</a></h1>
 
