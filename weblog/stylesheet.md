@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 /* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
@@ -41,7 +42,7 @@ Location: /style.css
 	position: sticky;
 	top: 0;
 	left: 0;
-	height: 3em;
+	min-height: 3em;
 	background-color: var(--background);
 	font-size: 0.9rem !important;
 	z-index: 999;
@@ -147,7 +148,7 @@ a:hover {
 		padding: 0.5em;
 	}
 	header {
-		padding: 0.5rem;
+		max-width: 95%;
 	}
 	main .card {
 	padding: 1rem;
@@ -261,7 +262,7 @@ background-image: linear-gradient(8deg, var(--yellow), var(--cyan)) !important;
 
 header {
 	display: block;
-	max-width: 25em;	
+	max-width: 800px;
 	background: #44475a;
 	border-radius: var(--border-radius);
 	margin: 2em auto 2em;
