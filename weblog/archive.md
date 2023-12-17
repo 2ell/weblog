@@ -1,9 +1,9 @@
 Type: Page
-Title: Archive
+Title: Index
 Template: Page Template
-Location: /archive
+Location: /theindex
 
 
-<h1>Archive</h1>
+<h1>Index</h1>
 
 {post-list}
