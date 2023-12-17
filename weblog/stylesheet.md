@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 /* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
@@ -113,8 +112,12 @@ a:hover {
 		padding: 0em;
 	}
 	main {
-		padding: 1em;
+		padding: 0.5em;
 	}
+	.card {
+	margin: 1rem 1rem;
+	padding: 1rem;
+}
 }
 
 @media screen and (max-width: 1020px) {
