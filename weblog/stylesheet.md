@@ -288,7 +288,7 @@ nav li {
 
 nav li a {
 	color: var(--mantle);
-	display: block
+	display: block;
 	text-align: center;
 	text-decoration: none;
 	border-bottom: 0.2rem solid transparent;
