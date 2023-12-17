@@ -116,7 +116,7 @@ a:hover {
 	}
 	.card {
 	margin: 1rem 1rem;
-	padding: 1rem;
+	padding: 0.5rem;
 }
 }
 
@@ -284,7 +284,7 @@ main p {
 
 .card {
 	margin: 2rem 1rem;
-	padding: 2rem;
+	padding: 1.5rem;
 	border-radius: var(--border-radius);
 	box-shadow: 
 		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
