@@ -2,6 +2,8 @@ Type: File
 Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
+
+
 /* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
@@ -36,7 +38,6 @@ Location: /style.css
 	-moz-osx-font-smoothing: grayscale;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
-
 
 
 /* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
@@ -346,7 +347,7 @@ main p {
   content:"";
   position: absolute;
   inset: 10px;
-  transform: translate(10px, 10px, 10px, 15px);
+  transform: translate(1em, 1em);
   z-index: -1;
   background: var(--gradient1);
   filter: blur(2em);
