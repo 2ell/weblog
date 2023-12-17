@@ -12,6 +12,5 @@ Title: Post Template
 	{body}
 </article>
 </div>
-
 <hr class="post-spacing">
 </hr>

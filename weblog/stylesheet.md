@@ -63,7 +63,7 @@ Location: /style.css
 	color: transparent;
 	background-image: none;
 	border: 0;
-	margin-bottom: 2em;
+	margin-bottom: 2rem;
 }
 
 
