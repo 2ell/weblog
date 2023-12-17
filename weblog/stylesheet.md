@@ -46,7 +46,7 @@ Location: /style.css
 	font-size: 0.9rem !important;
 	padding: 1rem;
 	z-index: 999;
-	margin: 0 0 3em 1em;
+	margin: 0 0 3em 0em;
 }
 
 
@@ -75,7 +75,7 @@ Location: /style.css
 	color: transparent;
 	background-image: none;
 	border: 0;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 
@@ -103,7 +103,7 @@ a {
 	-webkit-background-clip: text;
     	background-clip: text;
 	border-bottom: 0.2rem solid var(--transparent2);	
-	transition: all 0.6s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	padding-bottom: 0;
 }
 
@@ -113,7 +113,7 @@ a:hover {
 	-webkit-background-clip: text;
     	background-clip: text;
 	border-bottom: 0.2rem solid var(--transparent);
-	transition: all 0.4s ease;
+	transition: all 0.2s ease;
 }
 
 /* mobile -------------------------------------------------------------------------------------------- [ MOBILE ] */
@@ -125,6 +125,9 @@ a:hover {
 	}
 	main {
 		padding: 0.5em;
+	}
+	header {
+		padding: 0.5rem;
 	}
 	main .card {
 	padding: 1rem;
@@ -395,7 +398,7 @@ article h1 a, article h2 a, article h3 a {
 	max-width: fit-content;
 	float: right;
 	text-shadow: 6px 6px 0px #0000000c;
-	font-size: 1em;
+	font-size: 1rem;
 	border-radius: 0.7rem  0rem 0rem 0.7rem;
 	color: var(--foreground);
 	text-align: right;
@@ -408,7 +411,6 @@ article h1 a, article h2 a, article h3 a {
 
 /* date svg ----------------------------------- [DATE SVG] */
 .post-info i {
-	font-size: 1rem;
 	padding-right: 0.3rem;
 }
 
