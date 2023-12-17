@@ -41,7 +41,7 @@ Title: Page Template
 		<nav>
 			<ul>
 				<li><a href="/about">about</a></li>
-				<li><a href="/index">index</a></li>
+				<li><a href="/theindex">index</a></li>
 				<li><a href="/colophon">colophon</a></li>
 				<li><a href="/linkroll">linkroll</a></li>
 
