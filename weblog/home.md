@@ -19,7 +19,7 @@ Title: Landing Page Template
 
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 
-<div id="top-nav">
+<div class="top-nav">
 	<a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
 	</div>
 </head>
