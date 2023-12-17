@@ -68,8 +68,28 @@
 	margin: 0 0 3em 0em;
 }
 
+.top-nav .rss {
+	float: left;
+}
+
 .top-nav .links {
 	float: right;
+	display: inline-block;
+	}
+
+	.top-nav .links ul {
+	list-style-type: none;
+	padding: 0rem;
+}
+	.top-nav .links li {
+	display: inline-flex;
+	padding: 0 0.5rem 0;
+}
+	.top-nav .links li a {
+	display: inline-flex;
+	text-align: center;
+	text-decoration: none;
+	max-height: fit-content;
 }
 
 /* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
@@ -165,7 +185,7 @@ a:hover {
 }
 	.top-nav .links li {
 	display: inline-flex;
-	padding: 0 0.5rem 0;
+	padding: 0 0.2rem 0;
 }
 	.top-nav .links li a {
 	display: inline-flex;
@@ -587,8 +607,9 @@ td, th {
 </style>
 
 <div class="top-nav">
-	<a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
-	<div class="links">{navigation}	</div>
+	<div class="rss"><a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
+	</div>
+		<div class="links">{navigation}	</div>
 </div>	
 
 </head>	
