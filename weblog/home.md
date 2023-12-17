@@ -24,7 +24,7 @@ Title: Landing Page Template
 	</div>
 </head>
 <body>
-<a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
+
 <div class="gradient-bg">
 	<header>
     <img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
