@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 :root {
 	--crust: rgb(24, 25, 38);
     --mantle: rgb(30, 32, 48);
@@ -73,7 +74,7 @@ p, li {
 }
 
 main a, 
-recent a,
+.recent a,
 footer a {
 	color: var(--subtext0);
 	background-image: var(--gradient2);
@@ -86,7 +87,7 @@ footer a {
 }
 
 main a:hover,
-recent a:hover,
+.recent a:hover,
 footer a:hover {
 	background-size: 100%;
 	color: transparent;
@@ -336,11 +337,11 @@ main img {
 		rgba(0, 0, 0, 0.03) 0px -3px 5px;
 	}
 
-	.img-box {
+.img-box {
 	max-width: 90%;
     margin: auto;
  }
-	.img-box img {
+.img-box img {
   	padding: 0 !important;
 }
 
