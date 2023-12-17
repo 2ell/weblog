@@ -334,6 +334,7 @@ main p {
 	margin: 2rem 1rem;
 	padding: 1.5rem;
 	border-radius: var(--border-radius);
+	background-color: var(--main-color);
 	z-index: 991;
 	box-shadow: 
 		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
