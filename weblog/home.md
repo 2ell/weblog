@@ -20,7 +20,7 @@ Title: Landing Page Template
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 <div class="top">
 	<div class="left">
-		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg {seperator} <span clas="page-title">{post-title}</span></h2>
+		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg {seperator} <span clas="page-title">{weblog-title}</span></h2>
 		</div>
 	<div class="right">
 	</div>
