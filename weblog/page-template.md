@@ -17,6 +17,9 @@ Title: Page Template
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
+<div id="top-nav">
+	<a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
+	</div>
 </head>
 <body>
 <a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>

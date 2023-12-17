@@ -57,6 +57,18 @@
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+#top-nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: var(--background);
+	font-size: 0.9rem !important;
+	padding: 1rem;
+	z-index: 999;
+	margin: 0 0 3em 1em;
+}
+
+
 
 /* override classes -------------------------------------------------------------------------------------- [ OVERRIDES ] */
 
@@ -133,10 +145,9 @@ a:hover {
 	main {
 		padding: 0.5em;
 	}
-	.card {
-	margin: 1rem 1rem;
-	padding: 0.5rem;
-}
+	main .card {
+	padding: 1rem;
+	}
 }
 
 @media screen and (max-width: 1020px) {
@@ -237,7 +248,7 @@ header {
 	border-radius: var(--border-radius);
 	margin: 2em auto 2em;
 	padding: 1em 2em 2em;
-	box-shadow: ;
+	z-index: 10;
 }
 
 .header-img {
@@ -305,6 +316,7 @@ main p {
 	margin: 2rem 1rem;
 	padding: 1.5rem;
 	border-radius: var(--border-radius);
+	z-index: 991;
 	box-shadow: 
 		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
 		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
@@ -369,10 +381,11 @@ main p {
   content:"";
   position: absolute;
   inset: 10px;
-  transform: translate(1em, 1em);
-  z-index: -1;
+  transform: translate(0.5em, 0.5em);
+  z-index: -4;
   background: var(--gradient1);
-  filter: blur(2em);
+  background-blend-mode: lighten;
+  filter: blur(1.4em);
 }
 
 .recent-posts {
@@ -558,10 +571,15 @@ td, th {
 
 
 </style>
-
-</head>
-<body>
+<div id="top-nav">
 	<a href="https://laurel.weblog.lol/xml.rss" class="no-line"><i class="fa-solid fa-square-rss"></i> <span class="no-line">RSS</span></a>
+	</div>
+	
+</head>	
+
+<body>
+
+
 	<div class="gradient-bg">
 
 	<header>
