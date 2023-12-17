@@ -16,6 +16,7 @@ Title: Landing Page Template
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
+<link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 
 <div class="top">
 	<div class="left">
