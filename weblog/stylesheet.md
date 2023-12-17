@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 /* variables -------------------------------------------------------------------------------------------- [ VARIABLES ] */
 :root {
 	--transparent:#ffffff0e;
