@@ -30,9 +30,9 @@ Title: Page Template
 <div class="top-nav">
 	<div class="left">
 		<ul class="no-line">
-<li><a href="https://laurel.omg.lol/">home</a></li>
-<li><a href="https://laurel.omg.lol/now">now</a></li>
-<li><a href="https://laurel.omg.lol/status">status</a></li>
+<li><a href="https://laurel.omg.lol/">@laurel</a></li>
+<li><a href="https://laurel.omg.lol/now">/now</a></li>
+<li><a href="https://laurel.status.lol">/status</a></li>
 	</ul>
 	</div>
 		<div class="right">	
