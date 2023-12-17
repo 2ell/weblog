@@ -67,11 +67,11 @@ Title: Landing Page Template
 <main>
 
 {body}
+<hr class="post-spacing"></hr>
 
-<nav>
 {previous-page}
 {next-page}
-</nav>
+<hr class="post-spacing"></hr>
 
 </main>
 
