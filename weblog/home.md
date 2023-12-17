@@ -17,15 +17,15 @@ Title: Landing Page Template
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
 
-<link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 <div class="top">
 	<div class="left">
-		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg {separator} <span clas="page-title">{weblog-title}</span></h2>
+		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg </a>{separator} <span class="page-title"><a href="{location}">{weblog-title}</a></span></h2>
 		</div>
 	<div class="right">
+		<i class="fa-solid fa-bars"></i>
 	</div>
-</div>
-</div>
+
+
 
 <div class="top-nav">
 	<div class="left">

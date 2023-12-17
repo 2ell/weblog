@@ -19,12 +19,13 @@ Title: Page Template
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 <div class="top">
 	<div class="left">
-		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg {separator} <span clas="page-title">{post-title}</span></h2>
+		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg </a>{separator} <span class="page-title"><a href="{location}">{post-title}</a></span></h2>
 		</div>
 	<div class="right">
+		<i class="fa-solid fa-bars"></i>
 	</div>
-</div>
-</div>
+
+
 
 <div class="top-nav">
 	<div class="left">
