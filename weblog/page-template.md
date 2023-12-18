@@ -17,25 +17,29 @@ Title: Page Template
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
+
 <div class="top">
-	<div class="left">
-		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg </a>{separator} <span class="page-title"><a href="{location}">{post-title}</a></span></h2>
+	<div class="top-left">
+		<h2 class="top-title">
+			<a href="https://laurel.weblog.lol">wblg </a>{separator} <span class="page-title">{post-title}</span>
+		</h2>
 		</div>
-	<div class="right">
+	<div class="top-right">
 		<i class="fa-solid fa-bars"></i>
 	</div>
 </div>
 
 
 <div class="top-nav">
-	<div class="left">
+	<div class="top-nav-left">
 		<ul class="no-line">
 <li><a href="https://laurel.omg.lol/">@laurel</a></li>
 <li><a href="https://laurel.omg.lol/now">/now</a></li>
 <li><a href="https://laurel.status.lol">/status</a></li>
 	</ul>
 	</div>
-		<div class="right">	
+		<div class="top-nav-right">	
+
 		</div>
 </div>	
 		<nav>
@@ -51,18 +55,21 @@ Title: Page Template
 		</nav>
 
 	<header>
-
 <div class="header-container">
-		<div class="gradient-bg-circle">
-			<img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
+		<div class="header-img">
+			<img src="https://i.postimg.cc/9FZvWMzb/circle.png">
 			</div>
-	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
-	<h5 class="description">{weblog-description}</h5>
-	<hr class="divider"></hr>
-</header>
+	<div class="header-text">
+	<h1 id="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
+	<h3 class="description">A thoughtful description</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique et mi non aliquet. Vestibulum faucibus luctus justo. Pellentesque eu risus at nibh commodo ultricies. Fusce maximus convallis sapien, at consectetur turpis tempus id. Duis elit nibh, lacinia eget erat et, sollicitudin vehicula sem. Donec id aliquet dui, ac porttitor massa. Integer congue vestibulum commodo. Nunc in felis ut enim mattis viverra ac eget arcu. Sed posuere orci eget consectetur accumsan. </p>
 </div>
+</div>
+</div>
+</header>
 </head>	
 
+<body>
 <main>
 
 {body}

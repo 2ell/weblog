@@ -119,10 +119,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 1rem 0;
 }
 
-#weblog-title {
-	max-width: 100%;
-}
-
 #weblog-title a {
 	font-family: 'VC Honey Deck', serif;
 	font-weight: 700;
@@ -131,6 +127,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------------------------ [LAYOUT]*/
+
+.f-container {
+	display: flex;
+}
 
 hr {
 	margin: 0, 0, 2rem;
@@ -189,14 +189,16 @@ nav a:hover {
 	position: sticky;
 	top: 0;
 	left: 0;
-	height: 3rem;
+	display: flex;
+	height: 3em;
 	background-color: var(--crust);
 	width: 100%;
 	text-decoration: none !important;
 }
 
 .top i {
-	padding: 1rem;
+	margin: 0.3rem;
+	padding: 0.5rem;
 	font-size: 1.2em;
 }
 
@@ -214,19 +216,18 @@ nav a:hover {
 	text-decoration: none !important;
 }
 
-.page-title a {
+.page-title {
 	color: var(--yellow);
+	font-size: 1.3rem;
 }
 
-.top .right {
+.top-right {
 	padding: 0.3rem;
-	display: block;
-	float: right;
+	flex-grow: 0;
 }
 
-.top .left {
-	display: block;
-	float: left;
+.top-left {
+	flex: 1;
 }
 
 /* [top navigation bar] */
@@ -241,6 +242,9 @@ nav a:hover {
 	border-left: 0;
 	border-right: 0;
 	z-index: 999;
+	display: flex;
+	gap: 0.2rem;
+	justify-content: space-between;
 }
 
 .top-nav ul {
@@ -254,40 +258,35 @@ nav a:hover {
 	margin: 0;
 }
 
-.top-nav .left {
-	position: absolute;
-	left: 0;
-	display: block;
-	float: left;
-	text-align: center;
+.top-nav-left {
+	flex: 1;
+	flex-grow: 4;
+	align-self: flex-start;
 }
 
-.top-nav .left a {
+.top-nav-left a {
 	color: var(--subtext0);
 	padding-left: 1rem;
-	display: block;
-	max-width: fit-content;
 	border-bottom: none;
 	text-decoration: none;
 }
 
-.top-nav .right {
-	float: right;
-	display: block;	
-	text-align: center;
+.top-nav-right {
+	flex: 2;
+	padding-right: 0.5rem;
+	flex-grow: 0;
+	align-self: flex-end;
 }
 
-.top-nav .right a {
+.top-nav-right a {
 	color: var(--subtext0);
-	padding-right: 1rem;
-	display: block;
 	border-bottom: none;
 	text-decoration: none;
 }
 
 /* [weblog navigation bar] */
 nav {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-align: center;
 	background-color: var(--yellow);
 	border-bottom: 1px solid var(--text-normal);
@@ -312,17 +311,45 @@ nav li a {
 	max-height: fit-content;
 }
 
+
+/* [header box] */
+
 header {
+	padding: 0.5rem;
 	max-width: 100%;
 	background-color: var(--mantle);
-	margin: 2em auto 2em;
-	padding: 4em 3em 4em;
 }
 
 .header-container {
-	max-width: 80%;
-	margin: auto;
+	max-width: 800px;
+	padding: 2rem;
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	align-content: flex-start;	
+	gap: 2rem;
+}
+
+.header-img {
+	flex: 1;
+	flex-grow: 0;
+	flex-shrink: 6;
+	align-self: flex-start;
 	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.header-img img {
+	margin: auto;
+	height: auto;
+
+}
+
+.header-text {
+	flex: 2;
+	flex-grow: 6;
+	align-self: center;
 }
 
 /* ------------------------------------------- [MAIN]*/
@@ -405,24 +432,27 @@ main img {
 </style>
 
 <div class="top">
-	<div class="left">
-		<h2 class="top-title"><a href="https://laurel.weblog.lol">wblg </a>{separator} <span class="page-title"><a href="{location}">{post-title}</a></span></h2>
+	<div class="top-left">
+		<h2 class="top-title">
+			<a href="https://laurel.weblog.lol">wblg </a>{separator} <span class="page-title">{post-title}</span>
+		</h2>
 		</div>
-	<div class="right">
+	<div class="top-right">
 		<i class="fa-solid fa-bars"></i>
 	</div>
 </div>
 
 
 <div class="top-nav">
-	<div class="left">
+	<div class="top-nav-left">
 		<ul class="no-line">
 <li><a href="https://laurel.omg.lol/">@laurel</a></li>
 <li><a href="https://laurel.omg.lol/now">/now</a></li>
 <li><a href="https://laurel.status.lol">/status</a></li>
 	</ul>
 	</div>
-		<div class="right">	
+		<div class="top-nav-right">	
+
 		</div>
 </div>	
 		<nav>
@@ -439,12 +469,15 @@ main img {
 
 	<header>
 <div class="header-container">
-		<div class="gradient-bg-circle">
-			<img class="header-img" src="https://i.postimg.cc/9FZvWMzb/circle.png">
+		<div class="header-img">
+			<img src="https://i.postimg.cc/9FZvWMzb/circle.png">
 			</div>
-	<h1 id="weblog-title" class="gradient"><a href="{base-path}">{weblog-title}</a></h1>
-	<h5 class="description">{weblog-description}</h5>
-	<hr class="divider"></hr>
+	<div class="header-text">
+	<h1 id="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
+	<h3 class="description">A thoughtful description</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique et mi non aliquet. Vestibulum faucibus luctus justo. Pellentesque eu risus at nibh commodo ultricies. Fusce maximus convallis sapien, at consectetur turpis tempus id. Duis elit nibh, lacinia eget erat et, sollicitudin vehicula sem. Donec id aliquet dui, ac porttitor massa. Integer congue vestibulum commodo. Nunc in felis ut enim mattis viverra ac eget arcu. Sed posuere orci eget consectetur accumsan. </p>
+</div>
+</div>
 </div>
 </header>
 </head>	

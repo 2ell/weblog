@@ -3,8 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
-
 :root {
 	--crust: rgb(24, 25, 38);
     --mantle: rgb(30, 32, 48);
@@ -111,10 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 1rem 0;
 }
 
-#weblog-title {
-	max-width: 100%;
-}
-
 #weblog-title a {
 	font-family: 'VC Honey Deck', serif;
 	font-weight: 700;
@@ -123,6 +117,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------------------------ [LAYOUT]*/
+
+.f-container {
+	display: flex;
+}
 
 hr {
 	margin: 0, 0, 2rem;
@@ -181,14 +179,16 @@ nav a:hover {
 	position: sticky;
 	top: 0;
 	left: 0;
-	height: 3rem;
+	display: flex;
+	height: 3em;
 	background-color: var(--crust);
 	width: 100%;
 	text-decoration: none !important;
 }
 
 .top i {
-	padding: 1rem;
+	margin: 0.3rem;
+	padding: 0.5rem;
 	font-size: 1.2em;
 }
 
@@ -206,19 +206,18 @@ nav a:hover {
 	text-decoration: none !important;
 }
 
-.page-title a {
+.page-title {
 	color: var(--yellow);
+	font-size: 1.3rem;
 }
 
-.top .right {
+.top-right {
 	padding: 0.3rem;
-	display: block;
-	float: right;
+	flex-grow: 0;
 }
 
-.top .left {
-	display: block;
-	float: left;
+.top-left {
+	flex: 1;
 }
 
 /* [top navigation bar] */
@@ -233,6 +232,9 @@ nav a:hover {
 	border-left: 0;
 	border-right: 0;
 	z-index: 999;
+	display: flex;
+	gap: 0.2rem;
+	justify-content: space-between;
 }
 
 .top-nav ul {
@@ -246,40 +248,35 @@ nav a:hover {
 	margin: 0;
 }
 
-.top-nav .left {
-	position: absolute;
-	left: 0;
-	display: block;
-	float: left;
-	text-align: center;
+.top-nav-left {
+	flex: 1;
+	flex-grow: 4;
+	align-self: flex-start;
 }
 
-.top-nav .left a {
+.top-nav-left a {
 	color: var(--subtext0);
 	padding-left: 1rem;
-	display: block;
-	max-width: fit-content;
 	border-bottom: none;
 	text-decoration: none;
 }
 
-.top-nav .right {
-	float: right;
-	display: block;	
-	text-align: center;
+.top-nav-right {
+	flex: 2;
+	padding-right: 0.5rem;
+	flex-grow: 0;
+	align-self: flex-end;
 }
 
-.top-nav .right a {
+.top-nav-right a {
 	color: var(--subtext0);
-	padding-right: 1rem;
-	display: block;
 	border-bottom: none;
 	text-decoration: none;
 }
 
 /* [weblog navigation bar] */
 nav {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-align: center;
 	background-color: var(--yellow);
 	border-bottom: 1px solid var(--text-normal);
@@ -304,17 +301,45 @@ nav li a {
 	max-height: fit-content;
 }
 
+
+/* [header box] */
+
 header {
+	padding: 0.5rem;
 	max-width: 100%;
 	background-color: var(--mantle);
-	margin: 2em auto 2em;
-	padding: 4em 3em 4em;
 }
 
 .header-container {
-	max-width: 80%;
-	margin: auto;
+	max-width: 800px;
+	padding: 2rem;
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	align-content: flex-start;	
+	gap: 2rem;
+}
+
+.header-img {
+	flex: 1;
+	flex-grow: 0;
+	flex-shrink: 6;
+	align-self: flex-start;
 	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.header-img img {
+	margin: auto;
+	height: auto;
+
+}
+
+.header-text {
+	flex: 2;
+	flex-grow: 6;
+	align-self: center;
 }
 
 /* ------------------------------------------- [MAIN]*/
