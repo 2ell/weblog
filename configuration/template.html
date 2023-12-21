@@ -13,8 +13,8 @@
 
 
 	:root {
-	--transparent:#ffffff0e;
-	--transparent2: #ffffff07;
+	--transparent:rgba(20, 19, 19, 0.199);
+	--transparent2: #ffffff01;
 	--foreground-faded: #f8f8f25b;
 	--background: oklch(28.82% 0.022 277.51);
     --main-color: oklch(40.28% 0.032 277.83);
@@ -156,6 +156,7 @@ a:hover {
 
 	.top-right {
 		margin-top: 0.5rem;
+		margin-right: 1rem;
 		flex: 1;
 	}
 
@@ -180,8 +181,8 @@ a:hover {
 
 header {
 	margin-top: 1rem;
-	padding: 1rem;
-	width: 90%;
+	padding: 2rem;
+	width: 80%;
 	text-align: left;
 	background-color: var(--main-color);
 	border-radius: var(--border-radius);
@@ -193,6 +194,7 @@ header {
 	justify-content: flex-start;
 	flex-direction: row;
 	gap: 2rem;
+	padding: 2rem;
 }
 
 .header-img {
@@ -203,7 +205,6 @@ header {
 	text-align: left;
 	width: 100%;
 	margin: auto;
-
 }
 
 .header-img img {
@@ -217,18 +218,22 @@ header {
 	flex-grow: 6;
 	align-self: left;
 	color: var(--text-normal);
-	margin: 1rem auto;
+	margin: 0 auto;
+}
+
+#weblog-title a {
+	padding-top: 1rem;	
 }
 
 @media (max-width: 700px) {
 	.header-container {
 		padding: 1rem;
-		gap: 0.5;
+		gap: 0.5rem;
 		display: flex;
 		flex-flow: column;
 	}
 	.header-img {
-		align-self: center;
+		width: 100%;
 		margin: auto;
 		max-height: auto;
 	}
@@ -239,7 +244,7 @@ header {
 }
 
 main {
-	max-width: 1020px;
+	max-width: 1000px;
 	margin-top: 0.5em;
 	padding: .5em .5em .5em .5em;
 	word-break: normal;
@@ -284,10 +289,12 @@ article {
 
 .recent {
 	color: var(--background);
-	width: 100%;
+	width: 80%;
   	padding: 2rem 2rem 1rem;
 	border-bottom: 0;
 	background-color: var(--purple);
+	border-radius: 0.7em;
+	margin-bottom: -1rem;
 }
 
 .recent-posts {
@@ -307,9 +314,6 @@ article {
 
 
 </style>
-
-	<nav>
-	</nav>
 
 	<div class="top">
 		<div class="top-left">
@@ -337,7 +341,7 @@ article {
 
 			<div class="header-text">
 				<h1 id="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
-					<h3 class="description">A thoughtful description</h3>
+					<h3 class="description"><i>a weblog in the process of arriving</i></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique et mi non aliquet. Vestibulum faucibus luctus justo. Pellentesque eu risus at nibh commodo ultricies. </p>
 			</div>
 	</div>
@@ -380,7 +384,7 @@ article {
 		</div>
 			<span>made with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></span>
 			<br>
-			<span>powered by <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></span>
+			<span>powered by the endlessly delightful <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></span>
 	</footer>
 
 </body>
