@@ -8,10 +8,11 @@ Title: Post Template
 					<i class="fa-solid fa-clock"></i> {date}
 				</div>
 			</div>
-			<article>
-				{body}
-			</article>
-		</div>
-	</div>
+<article>
+{body}
+</article>
+</div>
+</div>
+		
 <hr class="post-spacing">
 </hr>
