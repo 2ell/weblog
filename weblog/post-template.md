@@ -1,8 +1,7 @@
 Type: Template
 Title: Post Template
 
-
-	<div class="content">
+<div class="content">
 		<div class="article-container">
 			<div class="post-info-container">
 				<div class="post-info">
