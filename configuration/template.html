@@ -7,18 +7,18 @@
 <span class="hide">{feeds}</span>
 <style>
 @import url('https://static.omg.lol/type/font-honey.css');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lora&display=swap');
+@import url('https://static.omg.lol/type/font-lato-regular.css');
+@import url('https://static.omg.lol/type/font-lato-bold.css');
+@import url('https://static.omg.lol/type/font-lato-italic.css');
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
-
-
-	:root {
-	--transparent:rgba(20, 19, 19, 0.199);
-	--transparent2: #ffffff01;
-	--foreground-faded: #f8f8f25b;
+:root {
+    --v-faint: oklch(100% 0 0 / 4%);
+    --faint: oklch(100% 0 0 / 30%);
+	--foreground-faded: oklch(97.75% 0.04 106.55 / 20.69%);
 	--background: oklch(28.82% 0.022 277.51);
-    --main-color: oklch(40.28% 0.032 277.83);
-    --faint: oklch(52.79% 0.024 279.54);
+    --main-color: oklch(40.28% 0.032 277.83 / 100%);
+    --faint-text: oklch(52.79% 0.024 279.54);
     --foreground: oklch(97.75% 0.008 106.55);
     --comment: oklch(55.98% 0.08 270.09);
     --cyan: oklch(88.26% 0.093 212.85);
@@ -28,112 +28,59 @@
     --purple: oklch(74.2% 0.09 301.88);
     --red: oklch(68.22% 0.206 24.43);
     --yellow: oklch(95.53% 0.134 112.76);
-
 	--gradient1: linear-gradient(145deg, var(--yellow), var(--purple), var(--cyan));
 	--gradient2: linear-gradient(120deg, var(--lavendar), var(--teal), var(--yellow), var(--pink));
 	--gradient3: linear-gradient(120deg, var(--blue), var(--sky), var(--teal));
 	--default-font: 'Lato', sans-serif;
 	--header-font: 'VC Honey Deck', serif;
-	--body-font: 'Lora', serif;
 
 	--default-size: 1.2em;
 	--border-radius: 0.7em;
 }
 
 * {
-	margin: auto;
+    margin: 0 auto;
+    overflow: ;
 }
 
-body {
-	font-family: var(--default-font);
-	font-size: var(--default-size);
-	margin: 0 auto;
-	color: var(--foreground);
-	background-color: var(--background);
-}
-
-@media (max-width: 700px) {
-	body {
-		font-size: 1em;
-	}
-}
-/* [overrides] */
-
-.hide {
-	display: none;
-}
-
-.no-line {
-	text-decoration: none !important;
-}
-
-.post-spacing {
-	color: transparent;
-	background-image: none;
-	border: 0;
-	margin-bottom: 0.5rem;
-}
-
-/* [typography] */
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'VC Honey Deck', serif;
-	font-weight: 400;
-	text-shadow: 6px 6px 0px #0000000c;
-}
-
-a {
-	text-decoration: dotted var(--transparent);
-	color: var(--foreground);
-	background-image: var(--gradient1);
-	background-size: 0;
-	-webkit-background-clip: text;
-    	background-clip: text;
-	border-bottom: 0.2rem solid var(--transparent2);	
-	transition: all 0.2s ease-in-out;
-	padding-bottom: 0;
-}
-
-a:hover {
-	background-size: 100%;
-	background-blend-mode: lighten;
-	color: transparent;
-	-webkit-background-clip: text;
-    	background-clip: text;
-	border-bottom: 0.2rem solid var(--transparent);
-	transition: all 0.2s ease;
-}
-
-
-.top {
-	position: sticky;
-	top: 0;
-	left: 0;
-	width: 100%;
-	max-height: 4em;
-	background-color: var(--background);
-	text-decoration: none !important;
-	text-transform: lowercase;
-	display: flex;
-	box-shadow: 
+.gradient-frame {
+        position: sticky;
+        position: -webkit-sticky;
+	    top: 0 !important;
+	    left: 0;
+        background-image: var(--gradient1);
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 0.2rem;
+        color: var(--foreground);
+        box-shadow: 
 		rgba(0, 0, 0, 0.1) 0px 1px 1px, 
 		rgba(0, 0, 0, 0.01) 0px -12px 30px, 
 		rgba(0, 0, 0, 0.1) 0px 4px 6px, 
 		rgba(0, 0, 0, 0.1) 0px 12px 13px, 
 		rgba(0, 0, 0, 0.03) 0px -3px 5px;
+        z-index: 999;
+    }
+
+.top {
+	min-height: 2.4em;
+	background-color: var(--background);
+	width: 100%;
 }
+    .top-container {
+        display: flex;
+        align-items: flex-end;
+        max-width: 50em;
+    }
 
 	.top-left {
 		flex: 1;
-		flex-grow: 0;
-		align-self: flex-start;
-		margin-top: 1rem;
-		margin-bottom: 0.5rem;
-		margin-left: 1rem;
+		flex-grow: 4;
+        margin-left: 1rem;
+        margin-top: 1rem;
 	}
 
 		.top-title a {
-			text-decoration: dotted var(--transparent);
 			color: var(--foreground);
 			background-image: var(--gradient1);
 			background-size: 0;
@@ -156,100 +103,154 @@ a:hover {
 
 	.top-right {
 		margin-top: 0.5rem;
-		margin-right: 1rem;
-		flex: 1;
+		flex: 2;
+        flex-grow: 6;
+        align-self: flex-end;
+        text-align: right;
 	}
 
 	.top-right ul {
-	list-style-type: none;
-	text-align: right;
+	    list-style-type: none;
+	    text-align: right;
 	}
 
 	.top-right li {
-	display: inline;
-	padding: 0 0.5rem 0;
+	    display: inline-flex;
+    }
+
+    .top-right a {
+        padding-right: 1rem;
+        border-bottom: 0 !important;
+    }
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: var(--default-size);
+    padding: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'VC Honey Deck', serif;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: var(--foreground);
+        background-image: var(--gradient1);
+        background-size: 0;
+        -webkit-background-clip: text;
+        background-clip: text;
+        border-bottom: 0.2rem solid var(--v-faint) !important;     
+        transition: all 0.2s ease-in-out;
+        padding-bottom: 0;
+    }
+        a:hover {
+            background-size: 100%;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            border-bottom: 0.2rem solid var(--faint);
+            transition: all 0.2s ease;
+        }
+
+    hr {
+        background-image: var(--gradient1);
+        background-size: 100%;
+        padding: 0.5px;
+        border: 0;
+    }
+
+    /* special classes */
+
+    .gradient-bg {
+    max-width: fit-content;
+    margin: auto;
+    border-radius: var(--border-radius) var(--border-radius);
+    transform: translate(0);
+    background-color: var(--main-color);
+    z-index: -999;
 }
+    .gradient-bg:before {
+        content:"";
+        position: absolute;
+        inset: 30px;
+        transform: translate(0.5em, 0.5em);
+        background: var(--gradient1);
+        opacity: 0.5;
+        filter: blur(2rem);
+        z-index: -999;
+    }
 
-.top-right li a {
-	text-decoration: none;
-	border-bottom: 0.2rem solid var(--transparent2);
-	max-height: fit-content;
-}
+    .center {
+    text-align: center;
+    }
 
-/* [weblog navigation bar] */
+    .no-btm {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    } 
 
+    .h-dark {
+        font-family: 'VC Honey Deck', serif;
+        color: #282a36;
+    }
 
-header {
-	margin-top: 1rem;
-	padding: 2rem;
-	width: 80%;
-	text-align: left;
-	background-color: var(--main-color);
-	border-radius: var(--border-radius);
-}
+    .h-purple {
+    font-family: 'VC Honey Deck', serif;
+    color: var(--purple);
+    }
 
-.header-container {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	flex-direction: row;
-	gap: 2rem;
-	padding: 2rem;
-}
+    .small {
+    font-size: 0.8em;
+    list-style-type: none;
+    }
 
-.header-img {
-	flex: 1;
-	flex-grow: 1;
-	flex-shrink: 6;
-	align-self: flex-start;
-	text-align: left;
-	width: 100%;
-	margin: auto;
-}
+    /* sections: top ------- */
 
-.header-img img {
-	margin: auto;
-	max-height: 15em;
-	border-radius: var(--border-radius);
-}
+    main {
+        max-width: 50em;
+    }
 
-.header-text {
-	flex: 1;
-	flex-grow: 6;
-	align-self: left;
-	color: var(--text-normal);
-	margin: 0 auto;
-}
+    .main {
+        background-color: var(--main-color);
+        border-radius: var(--border-radius);
+        padding-bottom: 1rem;
+    }
 
-#weblog-title a {
-	padding-top: 1rem;	
-}
+    .wrapper {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 0;
+        margin-bottom: -0.5rem;
+        display: flex;
+        gap: 0.2rem;
+        height: fit-content;
+        max-width: 90%;
+    }
 
-@media (max-width: 700px) {
-	.header-container {
-		padding: 1rem;
-		gap: 0.5rem;
-		display: flex;
-		flex-flow: column;
+    .wrapper-left {
+        flex: 1;
+        flex-grow: 4;
+        align-self: flex-end;
+    }
+
+    .wrapper-right {
+        flex: 2;
+        flex-grow: 6;
+    }
+
+.content {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
-	.header-img {
-		width: 100%;
-		margin: auto;
-		max-height: auto;
-	}
-	.header-text {
-		flex-grow: 0;
-		margin: 0.5rem auto;
-	}
-}
-
-main {
-	max-width: 1000px;
-	margin-top: 0.5em;
-	padding: .5em .5em .5em .5em;
-	word-break: normal;
-	hyphens: auto;
-}
 
 main p {
 	margin: 1rem 0 1rem;
@@ -260,13 +261,15 @@ main p {
 }
 
 article {
-	padding-top: 1rem;
+	padding-top: 2rem;
 	padding-bottom: 1rem;
 }
 
 .post-info-container {
-	padding-bottom: 3rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
 	width: 100%;
+	height: fit-content;
 	border-bottom: 1px solid var(--purple);
 	float: right;
 }
@@ -274,7 +277,7 @@ article {
 	.post-info {
 		text-decoration: none !important;
 		font-size: 0.9rem;
-		padding: 0.2rem;
+		padding: 0;
 		margin-bottom: 0;
 		float: right;
 		text-align: right;
@@ -287,10 +290,9 @@ article {
 	border-top: 1px solid var(--crust);
 }
 
-
-.recent {
+	.recent {
 	color: var(--background);
-	width: 80%;
+	max-width: 30em;
   	padding: 2rem 2rem 1rem;
 	border-bottom: 0;
 	background-color: var(--purple);
@@ -302,57 +304,94 @@ article {
 	margin: 1rem 1rem 3rem;
 }
 
-.footer-main {
-	font-family: var(--header-font);
-	position: relative;
-	left: 0 !important;
-	bottom: 0 !important;
-	margin: 0;
-	background-color: var(--main-color);
-	padding: 1em 0 1.5em 0;
-	text-align: center;
+    footer {
+        color: var(--foreground);
+        background-color: var(--main-color);
+        max-width: 100%;
+        padding: 2em;
+        text-align: center;
+    }
+
+    footer a {
+        text-transform: lowercase;
+        color: var(--foreground);
+        font-family: 'VC Honey Deck', serif;
+        border-bottom: 0px !important;
+        padding-top: 0.5rem;
+    }
+
+    .credits {
+        font-size: 1em;
+    }
+
+    @media (max-width: 500px) {
+	body {
+		font-size: 1em;
+	}
+	main {
+		padding: 0.3rem;
+	}
+    .section {
+        gap: 0;
+        margin: 0;
+        padding-left: 0.2rem;
+    }
+    .box-connect {
+        flex-grow: 1;
+        border-right: 2px solid var(--main-color);
+        line-height: 1.6rem;
+        padding-left: 1rem;
+    }
+    .box-connect h3 {
+      font-size: 2em;
+    }
+    .box-status {
+        padding-right: 1rem;
+        font-size: 1em;
+        border-left: 2px;
+    }
+    .box-status h3 {
+        display: none;
+    }
+    #laurel {
+        padding-top: 0rem;
+    }
 }
 
-
 </style>
+<div class="gradient-frame">
+    <div class="top">
+        <div class="top-container">
+        <div class="top-left">
+            <h3 class="top-title">wblg</h3>
+        </div>
+        <a rel="me" href="https://social.lol/@laurel"></a>
+        <div class="top-right">
+    <i class="fa-solid fa-solid fa-hourglass"></i>
+    <a rel="me" href="https://laurel.omg.lol/now">now</a>
+    <i class="fa-solid fa-solid fa-message"></i>
+    <a rel="me" href="https://laurel.status.lol/">status</a>
+    <i class="fa-solid fa-solid fa-rss"></i>
+    <a rel="me" href="https://laurel.weblog.lol">weblog</a>   
+    </div>
+</div>
+</div>
+</div>    
 
-	<div class="top">
-		<div class="top-left">
-			<h2 class="top-title">
-				<a href="https://laurel.weblog.lol">wblg</a>
-			</h2>
-		</div>
-		<div class="top-right">
-			<ul>
-				<li><a href="/about">about</a></li>
-				<li><a href="/theindex">index</a></li>
-				<li><a href="/colophon">colophon</a></li>
-				<li><a href="/linkroll">linkroll</a></li>
-				<li><a href="https://laurel.weblog.lol/xml.rss">rss</a></li>
-			</ul>
-		</div>
-	</div>
+  </head>
+  <body>
 
-
-	<header>
-	<div class="header-container">
-			<div class="header-img">
-				<img src="https://cdn.some.pics/laurel/65766b3770711.jpg">
-			</div>
-
+    <main>
+		<div class="main">
+			<div class="wrapper">
 			<div class="header-text">
 				<h1 id="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
 					<h3 class="description"><i>a weblog in the process of arriving</i></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique et mi non aliquet. Vestibulum faucibus luctus justo. Pellentesque eu risus at nibh commodo ultricies. </p>
 			</div>
 	</div>
-	</header>
-
-</head>	
-
-<body>
-
-	<main>
+</div>
+	<div class="content">
 		<div class="article-container">
 			<div class="post-info-container">
 				<div class="post-info">
@@ -366,6 +405,7 @@ article {
 				<i class="fa-solid fa-tag"></i> {tags}
 				</div>
 		</div>
+	</div>
 	</main>
 
 	<div class="recent">
@@ -376,13 +416,7 @@ article {
 	</div>
 
 	<footer class="footer-main">
-		<div class="hide">
-		<ul>
-			<li><a href="https://laurel.omg.lol/">@laurel</a></li>
-			<li><a href="https://laurel.omg.lol/now">/now</a></li>
-			<li><a href="https://laurel.status.lol">/status</a></li>
-		</ul>
-		</div>
+
 			<span>made with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></span>
 			<br>
 			<span>powered by the endlessly delightful <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></span>
