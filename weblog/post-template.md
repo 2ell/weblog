@@ -2,13 +2,17 @@ Type: Template
 Title: Post Template
 
 
-<div class="card">
-	<div class="post-info-container">
-	<a href="{location}"><i class="fa-solid fa-clock"></i> {date}</a>
-</div>
-<article>
-	{body}
-</article>
-</div>
+	<div class="content">
+		<div class="article-container">
+			<div class="post-info-container">
+				<div class="post-info">
+					<i class="fa-solid fa-clock"></i> {date}
+				</div>
+			</div>
+			<article>
+				{body}
+			</article>
+		</div>
+	</div>
 <hr class="post-spacing">
 </hr>
