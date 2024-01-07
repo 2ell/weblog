@@ -23,8 +23,8 @@ Title: Landing Page Template
         <div class="top-right">
     <a rel="me" href="https://laurel.omg.lol/about">ABOUT</a>   
     <a rel="me" href="https://laurel.omg.lol/">POSTS</a>  
-    <a rel="me" href="https://laurel.weblog.lol/now">NOW</a>
-    <a rel="me" href="https://laurel.weblog.lol/archive">ARCHIVE</a>
+    <a rel="me" href="https://laurel.omg.lol/now">NOW</a>
+    <a rel="me" href="https://laurel.omg.lol/archive">ARCHIVE</a>
     <a rel="me" href="https://laurel.status.lol/">RSS</a>
 
     </div>
