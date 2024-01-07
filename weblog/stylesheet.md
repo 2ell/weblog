@@ -30,8 +30,8 @@ body {
     }
 
         h1 {
-            font-size: 5rem;
-            line-height: 5rem;
+            font-size: 4rem;
+            line-height: 4rem;
         }
 
         h2 {
@@ -80,7 +80,7 @@ body {
     }
 
     .black a {
-        color: var(--background);
+        color: var(--background) !important;
         border-bottom: 1px solid var(--background);
     }
 
