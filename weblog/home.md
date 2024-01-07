@@ -4,7 +4,7 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{weblog-title}</title>
+<title>ll{seperator}home</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
@@ -40,7 +40,6 @@ Title: Landing Page Template
 
     <main>
 {body}
-<hr class="post-spacing"></hr>
 
 {previous-page}
 {next-page}
