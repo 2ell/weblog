@@ -3,10 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,700;1,400&family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
-@import url('https://static.omg.lol/type/font-md-io.css');
-@import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
-
 :root {
     --background: #f4eed7ff;
     --default-size: 1em;
@@ -71,13 +67,13 @@ body {
     main {
         line-height: 1rem !important;
     }
-        h1 {
+    h1 {
         font-size: 2rem;
         line-height: 2rem;
     }
-        h2 {
-            font-size: 1.5rem;
-        }
+    h2 {
+        font-size: 1.5rem;
+    }
     .top-right a {
         padding: 0.3rem !important;
         font-size: 0.6rem !important;
@@ -166,7 +162,7 @@ body {
 .header {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    background-image: url("https://i.postimg.cc/DfXKKtb3/disks.png");
+    background-image: url("https://i.postimg.cc/X76DTm3q/disksX.png");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 20em;

@@ -4,7 +4,7 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ll{seperator}home</title>
+<title>ll{separator}home</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
