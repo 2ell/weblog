@@ -9,33 +9,30 @@ Title: Landing Page Template
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
 <style>
-@import url('https://static.omg.lol/type/font-honey.css');
-@import url('https://static.omg.lol/type/font-lato-regular.css');
-@import url('https://static.omg.lol/type/font-lato-bold.css');
-@import url('https://static.omg.lol/type/font-lato-italic.css');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,700;1,400&family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
 <link rel="stylesheet" href="https://laurel.weblog.lol/style.css">
 
-<div class="gradient-frame">
     <div class="top">
         <div class="top-container">
         <div class="top-left">
-            <h3 class="top-title">wblg</h3>
-        </div>
+           <h2>laurel</h2></div>
         <a rel="me" href="https://social.lol/@laurel"></a>
         <div class="top-right">
-    <i class="fa-solid fa-solid fa-hourglass"></i>
-    <a rel="me" href="https://laurel.omg.lol/now">now</a>
-    <i class="fa-solid fa-solid fa-message"></i>
-    <a rel="me" href="https://laurel.status.lol/">status</a>
-    <i class="fa-solid fa-solid fa-rss"></i>
-    <a rel="me" href="https://laurel.weblog.lol">weblog</a>   
+    <a rel="me" href="https://laurel.omg.lol">ABOUT</a>   
+    <a rel="me" href="https://laurel.weblog.lol/now">NOW</a>
+    <a rel="me" href="https://laurel.status.lol/">STATUS</a>
+    <a rel="me" href="https://laurel.status.lol/">RSS</a>
+
     </div>
 </div>
 </div>
-</div>    
+</div>
+<div class="header">
+    -
+</div>   
 
   </head>
   <body>
