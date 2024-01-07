@@ -9,8 +9,12 @@ Location: /style.css
     --header-font: 'Caladea', serif;
     --default-font: 'Lato', sans-serif;
     --default-c: #171717;
+    --darkreader-neutral-background: #222 !important;
+    --darkreader-bg--background: #000 !important;
+    --darkreader-text: #fff !important;
+    --darkreader-border--background: #fff !important;
+    --darkreader-neutral-text: #fff !important;
 }
-
 
 body {
     max-width: 40em;
@@ -80,7 +84,6 @@ body {
     }
 }
 
-
 /* special divs ----------------- */
 
     .outline {
@@ -117,7 +120,7 @@ body {
 
 .top {
 	min-height: fit-content;
-	background-color: var(--background);
+	background-color: var(--background) !important;
 	width: 100%;
     margin: 0, auto;
     letter-spacing: 0.1rem;
