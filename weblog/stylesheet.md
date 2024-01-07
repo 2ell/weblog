@@ -20,6 +20,7 @@ body {
     padding: 0;
     background-color: var(--background);
     color: var(--default-c);
+    transition: all 0.2s ease-in-out;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -61,9 +62,10 @@ body {
     @media (max-width: 500px) {
 	body {
 		font-size: 0.9em;
-        
-
 	}
+    main {
+        line-height: 1em;
+    }
 }
 
 
