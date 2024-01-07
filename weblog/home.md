@@ -40,13 +40,16 @@ Title: Landing Page Template
 
     <main>
 {body}
+</main>
+
 <div style="text-align: center;">
 {previous-page}
 {next-page}
 </div>
+
 <hr class="post-spacing"></hr>
 
-</main>
+
 
 	<footer class="footer-main">
 
