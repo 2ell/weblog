@@ -71,9 +71,13 @@ body {
     main {
         line-height: 1rem !important;
     }
-    h2 {
-        font-size: 1.5rem;
+        h1 {
+        font-size: 2rem;
+        line-height: 2rem;
     }
+        h2 {
+            font-size: 1.5rem;
+        }
     .top-right a {
         padding: 0.3rem !important;
         font-size: 0.6rem !important;

@@ -46,9 +46,9 @@ Title: Page Template
 
 	<footer class="footer-main">
 
-			<span>made with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></span>
+			<span>Made with <i class="fa-solid fa-heart" style="color: #ff00ea"></i> by <a href="https://laurel.omg.lol">laurel</a></span>
 			<br>
-			<span>powered by <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></span>
+			<span>Powered by <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></span>
 	</footer>
 </body>
 </html>
