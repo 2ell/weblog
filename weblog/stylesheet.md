@@ -64,7 +64,7 @@ body {
 		font-size: 0.9em;
 	}
     main {
-        line-height: 1em;
+        line-height: 0.5em;
     }
 }
 
