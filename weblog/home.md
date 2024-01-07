@@ -38,17 +38,6 @@ Title: Landing Page Template
   <body>
 
     <main>
-		<div class="main">
-			<div class="wrapper">
-			<div class="header-text">
-				<h1 id="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
-					<h3 class="description"><i>a weblog in the process of arriving</i></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique et mi non aliquet. Vestibulum faucibus luctus justo. Pellentesque eu risus at nibh commodo ultricies. </p>
-			</div>
-	</div>
-</div>
-
-
 {body}
 <hr class="post-spacing"></hr>
 
