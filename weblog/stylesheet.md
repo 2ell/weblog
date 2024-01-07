@@ -3,10 +3,9 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 :root {
     --background: #f4eed7ff;
-    --default-size: 1.2em;
+    --default-size: 1em;
     --header-font: 'Caladea', serif;
     --default-font: 'Lato', sans-serif;
     --default-c: #171717;
@@ -61,7 +60,9 @@ body {
 
     @media (max-width: 500px) {
 	body {
-		font-size: 1em;
+		font-size: 0.9em;
+        
+
 	}
 }
 
@@ -126,7 +127,7 @@ body {
     .top-right a {
         text-decoration: none;
         padding: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
 /* header ----------------------- */
