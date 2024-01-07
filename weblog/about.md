@@ -8,5 +8,7 @@ Location: /about
 
 <p>Plant-lovin' visionary type. Literary artist. YIMBY. <a rel="me" href="https://obsidian.md">Obsidian</a>/PKM hobbyist & tinkerer. Dedicated, weather-resistant pedestrian (<i>car-free in YYC since '93</i>). Answers promptly to the call of the afternoon daydream, the whistle of the tea kettle, or - sometimes - the name Laurel.</p>
 
-<img class="img" alt="laurel" id="profile-picture" src="https://profiles.cache.lol/laurel/picture?v=1703128815">
+<div class="img">
+<img class="profile-picture" alt="laurel" id="profile-picture" src="https://profiles.cache.lol/laurel/picture?v=1703128815">
+</div>
 

@@ -209,3 +209,9 @@ footer {
         border-left: 1px solid #000;
         border-right: 1px solid #000;
     }
+
+
+    .profile-picture {
+        width: 10em;
+        border-radius: 60em;
+    }
