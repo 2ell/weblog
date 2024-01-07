@@ -101,6 +101,17 @@ body {
         border-bottom: 1px solid var(--background);
     }
 
+    .img {
+        text-align: center;
+        font-size: 0.8rem;
+        font-style: italic;
+        line-height: 1rem;
+    }
+
+    .img img {
+        max-width: 100%;
+    }
+
 
 /* navigation ------------------------- */
 
@@ -163,8 +174,13 @@ body {
 }
 
 main {
-    padding: 3rem;
-    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #bee5a3;
+    padding-top: 3rem;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
     border-bottom: 1px solid #000;
     line-height: 2rem;
 }
