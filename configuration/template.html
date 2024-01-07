@@ -27,6 +27,7 @@ body {
     padding: 0;
     background-color: var(--background);
     color: var(--default-c);
+    transition: all 0.2s ease-in-out;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -58,9 +59,9 @@ body {
 
     a {
         color: #222;
-        text-decoration: none;
     }
      a:hover {
+        background-color: #7BDCB5;
         border-bottom: 1px solid #444;
         transition: all 0.2s ease-in-out;
      }
@@ -71,7 +72,14 @@ body {
 		font-size: 0.9em;
 	}
     main {
-        line-height: 0.5em;
+        line-height: 1rem !important;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .top-right a {
+        padding: 0.3rem !important;
+        font-size: 0.6rem !important;
     }
 }
 
@@ -80,6 +88,8 @@ body {
 
     .outline {
         border: 1px solid #000;
+        width: fit-content;
+        margin-bottom: 2rem;
     }
 
     .black {
@@ -119,7 +129,7 @@ body {
 
 	.top-right {
 		flex: 2;
-        flex-grow: 6;
+        flex-grow: 8;
         align-self: center;
         text-align: center;
 	}
@@ -156,14 +166,24 @@ body {
 }
 
 main {
-    padding: 1.5rem;
-    border: 1px solid #000;
-    line-height: 3rem;
+    padding: 3rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 2rem;
+}
+
+.post-info {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0rem;
+    line-height: 1rem;
 }
 
 hr {
     height: 1px;
     border: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #000;
 }
 
@@ -187,9 +207,10 @@ footer {
            <h2>laurel</h2></div>
         <a rel="me" href="https://social.lol/@laurel"></a>
         <div class="top-right">
-    <a rel="me" href="https://laurel.omg.lol">ABOUT</a>   
+    <a rel="me" href="https://laurel.omg.lol/about">ABOUT</a>   
+    <a rel="me" href="https://laurel.omg.lol/">POSTS</a>  
     <a rel="me" href="https://laurel.weblog.lol/now">NOW</a>
-    <a rel="me" href="https://laurel.status.lol/">STATUS</a>
+    <a rel="me" href="https://laurel.weblog.lol/archive">ARCHIVE</a>
     <a rel="me" href="https://laurel.status.lol/">RSS</a>
 
     </div>
@@ -204,12 +225,11 @@ footer {
     <main>
 	<div class="content">
 		<div class="article-container">
-			<div class="post-info-container">
+			<div class="outline">
 				<div class="post-info">
 					<i class="fa-solid fa-clock"></i> {date}
 				</div>
 			</div>
-            <hr>
 			<article>
 				{body}
 			</article>
@@ -227,7 +247,7 @@ footer {
 	</div>
 
 	<footer class="footer-main">
-			Made with <i class="fa-solid fa-heart" style="color: #ff00ea"></i> by <a href="https://laurel.omg.lol">laurel</a></h5>
+			Made with <i class="fa-solid fa-heart" style="color: #ff00ea"></i> by <a href="https://laurel.omg.lol/about">laurel</a></h5>
 			<br>
             Powered by <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></h5>
 	</footer>

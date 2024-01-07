@@ -3,6 +3,10 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,700;1,400&family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
+@import url('https://static.omg.lol/type/font-md-io.css');
+@import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
+
 :root {
     --background: #f4eed7ff;
     --default-size: 1em;
@@ -52,10 +56,11 @@ body {
 
     a {
         color: #222;
-        text-decoration: none;
     }
      a:hover {
+        background-color: #7BDCB5;
         border-bottom: 1px solid #444;
+        transition: all 0.2s ease-in-out;
      }
 
 
@@ -64,7 +69,14 @@ body {
 		font-size: 0.9em;
 	}
     main {
-        line-height: 0.5em;
+        line-height: 1rem !important;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .top-right a {
+        padding: 0.3rem !important;
+        font-size: 0.6rem !important;
     }
 }
 
@@ -73,6 +85,8 @@ body {
 
     .outline {
         border: 1px solid #000;
+        width: fit-content;
+        margin-bottom: 2rem;
     }
 
     .black {
@@ -112,7 +126,7 @@ body {
 
 	.top-right {
 		flex: 2;
-        flex-grow: 6;
+        flex-grow: 8;
         align-self: center;
         text-align: center;
 	}
@@ -149,14 +163,24 @@ body {
 }
 
 main {
-    padding: 1.5rem;
-    border: 1px solid #000;
-    line-height: 3rem;
+    padding: 3rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 2rem;
+}
+
+.post-info {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0rem;
+    line-height: 1rem;
 }
 
 hr {
     height: 1px;
     border: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #000;
 }
 
