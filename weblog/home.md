@@ -21,9 +21,10 @@ Title: Landing Page Template
            <h2>laurel</h2></div>
         <a rel="me" href="https://social.lol/@laurel"></a>
         <div class="top-right">
-    <a rel="me" href="https://laurel.omg.lol">ABOUT</a>   
+    <a rel="me" href="https://laurel.omg.lol/about">ABOUT</a>   
+    <a rel="me" href="https://laurel.omg.lol/">POSTS</a>  
     <a rel="me" href="https://laurel.weblog.lol/now">NOW</a>
-    <a rel="me" href="https://laurel.status.lol/">STATUS</a>
+    <a rel="me" href="https://laurel.weblog.lol/archive">ARCHIVE</a>
     <a rel="me" href="https://laurel.status.lol/">RSS</a>
 
     </div>
@@ -32,7 +33,7 @@ Title: Landing Page Template
 </div>
 <div class="header">
     -
-</div>   
+</div> 
 
   </head>
   <body>

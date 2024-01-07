@@ -3,7 +3,7 @@ Title: Post Template
 
 <div class="content">
 		<div class="article-container">
-			<div class="post-info-container">
+			<div class="outline">
 				<div class="post-info">
 					<i class="fa-solid fa-clock"></i> {date}
 				</div>
