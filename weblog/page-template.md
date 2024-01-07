@@ -36,10 +36,9 @@ Title: Page Template
 
   </head>
   <body>
-
+<main>
 {body}
-
-
+</main>
 <div class="spacing">
 </div>
 </main>
@@ -48,7 +47,7 @@ Title: Page Template
 
 			<span>made with <i class="fa-solid fa-heart" style="color: var(--pink)"></i> by <a href="https://laurel.omg.lol">laurel</a></span>
 			<br>
-			<span>powered by the endlessly delightful <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></span>
+			<span>powered by <a href="https://home.omg.lol/referred-by/laurel">omg.lol</a></span>
 	</footer>
 </body>
 </html>

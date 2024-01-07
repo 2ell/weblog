@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 :root {
     --background: #f4eed7ff;
     --default-size: 1.2em;
@@ -76,6 +77,11 @@ body {
         padding-bottom: 3rem;
         background-color: #000;
         color: var(--background);
+    }
+
+    .black a {
+        color: var(--background);
+        border-bottom: 1px solid var(--background);
     }
 
 
