@@ -9,7 +9,7 @@ Title: Post Template
 				</div>
 			</div>
 <article>
-{body}
+{summary}
 </article>
 </div>
 </div>
