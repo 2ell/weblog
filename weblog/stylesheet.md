@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 :root {
     --background: #f4eed7ff;
     --default-size: 1em;
@@ -104,6 +105,12 @@ body {
         border-bottom: 1px solid var(--background);
     }
 
+    .black-narrow {
+        background-color: #000;
+        color: var(--background);
+        padding: 2rem;
+    }
+
     .img {
         text-align: center;
         font-size: 0.8rem;
@@ -165,9 +172,11 @@ body {
 .header {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    background-image: url("https://i.postimg.cc/TPtygz2P/diskssm.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("https://things.laurellynn.ca/img/headersized.webp");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  position: relative;
     min-height: 20em;
     color: transparent;
 }
