@@ -9,7 +9,7 @@ Title: Post Template
 				</div>
 			</div>
 <article>
-{title}
+<h1>{title}</h1>
 <div class="img">
 <img src="{image}">
 </div>
