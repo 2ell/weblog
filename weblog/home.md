@@ -44,6 +44,7 @@ Title: Landing Page Template
   <body>
 
     <main>
+    <hr>
 {body}
 </main>
 
