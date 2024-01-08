@@ -10,6 +10,7 @@ Title: Post Template
 			</div>
 <article>
 <h1>{title}</h1>
+<br>
 <div class="img">
 <img src="{image}">
 </div>
