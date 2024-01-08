@@ -10,7 +10,7 @@ Title: Post Template
 			</div>
 <article>
 {summary}
-<img src="{image}">
+<img class="img" src="{image}">
 </article>
 </div>
 </div>
