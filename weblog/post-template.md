@@ -10,6 +10,7 @@ Title: Post Template
 			</div>
 <article>
 {summary}
+{image}
 </article>
 </div>
 </div>
