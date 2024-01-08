@@ -35,6 +35,11 @@ Title: Landing Page Template
     -
 </div> 
 
+<div class="black-narrow"><b>NOTE</b>
+    <p>This website is not optimized for use with Darkreader, <i>Daniel</i>. Please add it to your list of non-inverted websites. Thank you.
+    </p>
+    </div>
+
   </head>
   <body>
 
@@ -43,11 +48,11 @@ Title: Landing Page Template
 </main>
 
 <div style="text-align: center;">
+<div class="pagination">
 {previous-page}
 {next-page}
 </div>
-
-<hr class="post-spacing"></hr>
+</div>
 
 
 
