@@ -5,10 +5,11 @@ Title: Post Template
 		<div class="article-container">
 			<div class="outline">
 				<div class="post-info">
-					<i class="fa-solid fa-clock"></i> {date}
+					<i class="fa-solid fa-clock"></i> <a href="$location">{date}</a>
 				</div>
 			</div>
 <article>
+{title}
 {summary}
 <img class="img" src="{image}">
 </article>
