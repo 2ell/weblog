@@ -25,7 +25,7 @@ Title: Page Template
     <a rel="me" href="https://laurel.omg.lol/">POSTS</a>  
     <a rel="me" href="https://laurel.omg.lol/now">NOW</a>
     <a rel="me" href="https://laurel.omg.lol/archive">ARCHIVE</a>
-    <a rel="me" href="https://laurel.status.lol/">RSS</a>
+    <a rel="me" href="https://laurel.weblog.lol/rss.xml">RSS</a>
 
     </div>
 </div>
