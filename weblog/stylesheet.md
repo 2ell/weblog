@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 :root {
     --background: #f4eed7ff;
     --default-size: 1em;
@@ -90,6 +89,7 @@ body {
     .outline {
         border: 1px solid #000;
         width: fit-content;
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
 
